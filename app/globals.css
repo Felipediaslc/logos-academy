@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Cooper-Bold";
+  src: url("./fonts/cooperboldbt.ttf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
