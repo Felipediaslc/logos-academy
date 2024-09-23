@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/yarn.look
+/yarn.lock
 
 /.pnp
 .pnp.js
