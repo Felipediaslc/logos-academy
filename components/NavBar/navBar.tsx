@@ -16,10 +16,11 @@ const Header = () => {
       const [open, setOpen] =useState(false);
 
     return (
-        <div className='shadow-md w-full fixed  2xl:fixed 
+        <div className='shadow-md w-full  fixed  2xl:fixed 
         z-10 top-0 left-0'>
-           <div className='md:flex items-center justify-between bg-orange-500
-            py-4 md:px-3 px-7'>
+           <div className='md:flex items-center justify-between
+            bg-orange-500
+            py-3 md:px-3 px-7'>
             {/* logo section */}
             <div className=' md:p-0  cursor-pointer   flex items-center gap-1'>
             <Image
@@ -49,15 +50,15 @@ const Header = () => {
                 {
                     Links.map((link) => (
                     <li key={link.name} className='md:ml-8 md:my-0 my-11 font-cooper-bold'>
-                        <a href={link.link} className='text-gray-800 text-[1.2rem]
+                        <a href={link.link} className='text-gray-950 text-[1.2rem]
                          hover:text-slate-100 md:text-[1rem] font-cooper-bold tracking-widest duration-500'>{link.name}</a>
                     </li>))
                 }
             
                 <button
-                className="btn   md:ml-8 mt-[0.1rem] relative inline-block  xl:font-cooper-bold 
-                           tracking-widest  w-[10rem] text-orange-500 no-underline
-                         bg-gray-900 shadow-2xl cursor-pointer px-0 py-1
+                className="btn border-2 border-gray-950   md:ml-8 mt-[0.1rem] relative inline-block  xl:font-cooper-bold 
+                           tracking-widest  w-[12rem] text-gray-950 no-underline font-cooper-bold
+                         bg-transparent shadow-2xl cursor-pointer px-0 py-1
                            group rounded-xl shadow-zinc-900">
                   
                   <span
@@ -69,9 +70,9 @@ const Header = () => {
                     </span>
                 </span>
                 <div
-                    className="relative z-10 flex items-center px-3 py-1 space-x-0 rounded-xl
-                     bg-gray-950/50 ring-1 ring-white/10 ">
-                    <span className="pl-2 pr-0 w-80  "  >Inscreva-se</span>
+                    className="relative z-10 flex items-center px-4 py-1 space-x-0 rounded-xl
+                      ring-1 ring-white/10 ">
+                    <span className="pl-2 pr-0 w-80 text-[1.2rem] xl:text-[1rem] "  >Inscreva-se</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
                         data-slot="icon" className="w-12 h-6">
                         <path fill-rule="evenodd"
