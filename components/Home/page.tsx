@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
       2xl:-mt-[4.8rem] 2xl:w-[100vw]
      "
     >
-      <h1 className="text-center -mt-[13rem] p-3 text-[4rem] font-cooper-bold  md:font-cooper-bold md:w-[80vw]  md:pl-8
+      <h1 className="text-center -mt-[8rem] p-3 text-[4rem] font-cooper-bold  md:font-cooper-bold md:w-[80vw]  md:pl-8
          md:leading-none  md:text-[7rem] md:-mt-[3rem] 
           
           

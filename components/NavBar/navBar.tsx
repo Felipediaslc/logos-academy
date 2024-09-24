@@ -42,27 +42,27 @@ const Header = () => {
                 }
             </div>
             {/* linke items */}
-            <ul className={` 2xl:mr-[9rem] md:flex md:items-center
+            <ul className={`mb-20 lg:mb-0  mt-8 lg:mt-0  md:h-0 2xl:mr-[9rem] md:flex md:items-center
                  md:pb-0 pb-12 absolute md:static
                   bg-orange-500 md:z-auto z-[-1]
                    left-0 w-full md:w-auto md:pl-0 pl-9
                     transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
                 {
                     Links.map((link) => (
-                    <li key={link.name} className='md:ml-8 md:my-0 my-11 font-cooper-bold'>
+                    <li key={link.name} className=' md:ml-8 md:my-0 my-11 font-cooper-bold'>
                         <a href={link.link} className='text-gray-950 text-[1.2rem]
                          hover:text-slate-100 md:text-[1rem] font-cooper-bold tracking-widest duration-500'>{link.name}</a>
                     </li>))
                 }
             
                 <button
-                className="btn border-2 border-gray-950   md:ml-8 mt-[0.1rem] relative inline-block  xl:font-cooper-bold 
-                           tracking-widest  w-[12rem] text-gray-950 no-underline font-cooper-bold
-                         bg-transparent shadow-2xl cursor-pointer px-0 py-1
+                className="btn mb-24  lg:mb-0  md:ml-8 mt-[0.1rem] relative inline-block  xl:font-cooper-bold 
+                           tracking-widest  w-[12rem] lg:w-[10.5rem] text-gray-950 no-underline font-cooper-bold
+                         bg-transparent shadow-2xl cursor-pointer px-0 py-1 
                            group rounded-xl shadow-zinc-900">
                   
                   <span
-                    className="py-1 absolute inset-0 overflow-hidden rounded-xl"><span
+                    className="py-1 absolute inset-0 overflow-hidden border-2 border-gray-950  rounded-xl"><span
                         className="absolute inset-0 rounded-xl 
                          bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(255,255,255,0.6)_0%,rgba(56,189,248,0)_75%)]
                           opacity-0 transition-opacity duration-500 group-hover:opacity-100">
