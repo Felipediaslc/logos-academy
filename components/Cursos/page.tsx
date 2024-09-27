@@ -1,16 +1,26 @@
 "use client";
 import React from "react";
+import Image from "next/image";
+import Html5 from "../../public/html.png";
+import Css from "../../public/css.png";
+import Javascript from "../../public/js.png";
+import Git from "../../public/git.png";
+import GitHub from "../../public/github.png";
+import NodeJS from "../../public/node-js.png";
+import Express from "../../public/Express.png";
+import MongoDB from "../../public/mongodb.png";
+import MySQL from "../../public/mysql.png";
+import Prisma from "../../public/prisma.webp";
+import ReactJs from "../../public/react.png";
+import Cloud from "../../public/cloud.png";
+import Project from "../../public/project.png"
+
 
 const Page = () => {
   return (
-    <section
-      className=" h-screem bg-gray-950
-      md:px-0 md:py-0  md:w-full md:h-[250vh]  md:bg-gray-950 
-      lg:bg-gray-950  lg:h-[335vh]
-      xl:w-full xl:bg-gray-950 
-      xl:h-[235vh] xl:py-0  xl:-mt-[1.5rem] xl:justify-center
-      2xl:h-[140vh]"
-    >
+    <section   className=" h-screem bg-gray-950  md:px-0 md:py-0  md:w-full md:h-[250vh]  md:bg-gray-950 
+      lg:bg-gray-950  lg:h-[335vh]  xl:w-full xl:bg-gray-950 xl:h-[235vh] xl:py-0  xl:-mt-[1.5rem] xl:justify-center
+      2xl:h-[140vh]" > 
       <div
         className="mt-[9rem] mb-[3rem] flex flex-col md:mt-[5rem] md:mb-[5rem]
        lg:mt-[5rem] lg:mb-[5rem]
@@ -41,8 +51,8 @@ const Page = () => {
           before:ml-[3.6rem] before:-translate-x-px 
           md:before:mx-auto md:before:translate-x-0
           before:h-full before:w-0.5 before:bg-gradient-to-b
-          before:from-transparent before:via-slate-300 
-          before:to-transparent"
+          before:from-transparent  before:via-orange-500 
+          before:to-transparent" 
         >
           <div
             className="relative  flex items-center 
@@ -55,9 +65,9 @@ const Page = () => {
           >
             <div
               className="flex items-center justify-center w-10 h-10 
-              rounded-full border-none bg-slate-300
-            group-[.is-active]:bg-orange-500 text-slate-500
-            group-[.is-active]:text-gray-950 shadow shrink-0 md:order-1
+              rounded-full border-none 
+            group-[.is-active]:bg-orange-500 
+            group-[.is-active]:text-gray-950   md:order-1
               md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
             >
               <svg
@@ -75,13 +85,30 @@ const Page = () => {
 
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]
-             lg:w-[calc(50%-3rem)] xl:h-[24vh]
-             bg-slate-700 p-4 rounded border-none shadow"
+             lg:w-[calc(50%-3rem)] xl:h-[30vh]
+             bg-transparent border border-1 border-yellow-800 p-4 rounded b"
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
-                <div className="font-bold tracking-widest text-orange-500">Html5 Css3</div>
-                <time className="font-caveat font-medium text-indigo-500">
-                  Icons
+                <div className="font-bold tracking-widest text-orange-500">Html5 Css3 JavaScript</div>
+                <time className="flex items-strat  ">
+                <div className="flex items-strat gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="30" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={Html5}
+                     className="color: transparent;"/></div>
+                <div className="flex items-center gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="30" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={Css}
+                     className="color: transparent;"/></div>
+                <div className="flex items-center gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="30" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={Javascript}
+                     className="color: transparent;"/></div>
                 </time>
               </div>
               <div className="text-slate-500">
@@ -124,13 +151,24 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(100%-15rem)] md:h-[15vh]
               lg:w-[calc(50%-2.5rem)]
-              xl:h-[24vh]
-            bg-slate-700 p-4 rounded border-none shadow"
+              xl:h-[30vh]
+            bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">Cross</div>
-                <time className="font-caveat font-medium text-indigo-500">
-                  Icons
+                <time className="flex items-strat">
+                <div className="flex items-strat gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="30" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={Git}
+                     className="color: transparent;"/></div>
+                <div className="flex items-center gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="30" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={GitHub}
+                     className="color: transparent;"/></div>
                 </time>
               </div>
               <div className="text-slate-500">
@@ -151,7 +189,7 @@ const Page = () => {
             <div
               className="flex items-center justify-center
                w-10 h-10 rounded-full border-none
-             bg-slate-300 group-[.is-active]:bg-orange-500 text-slate-500 group-[.is-active]:text-gray-950
+              group-[.is-active]:bg-orange-500  group-[.is-active]:text-gray-950
                shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
             >
               <svg
@@ -170,13 +208,18 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh] 
                lg:w-[calc(50%-2.5rem)]
-              xl:h-[24vh]
-             bg-slate-700 p-4 rounded border-none shadow"
+              xl:h-[30vh]
+             bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">Node.JS</div>
-                <time className="font-caveat font-medium text-indigo-500">
-                  Icons
+                <time className="">
+                <div className="flex items-strat gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="30" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={NodeJS}
+                     className="color: transparent;"/></div>
                 </time>
               </div>
               <div className="text-slate-500">
@@ -195,13 +238,12 @@ const Page = () => {
             md:odd:flex-row-reverse group 
             is-active"
           >
-            <div
-              className="flex items-center justify-center w-10 
-              h-10 rounded-full border-none
-            bg-slate-300 group-[.is-active]:bg-orange-500 text-slate-500 group-[.is-active]:text-gray-950
-              shadow shrink-0
-              md:ml-[0rem] md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2
-              xl:ml-0"
+             <div
+              className="flex items-center justify-center
+               w-10 h-10 rounded-full border-none
+              group-[.is-active]:bg-orange-500  
+                group-[.is-active]:text-gray-950
+               shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
             >
               <svg
                 className="fill-current"
@@ -220,13 +262,18 @@ const Page = () => {
               className="w-[calc(100%-5rem)] md:w-[calc(100%-15rem)]
                md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-             xl:h-[24vh]
-             bg-slate-700 p-2 rounded border-none shadow"
+             xl:h-[30vh]
+             bg-transparent border border-1 border-yellow-800 p-2 rounded"
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">Express</div>
-                <time className="font-caveat font-medium text-indigo-500">
-                  Icons
+                <time className="">
+                <div className="flex items-strat gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="30" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={Express}
+                     className="color: transparent;"/></div>
                 </time>
               </div>
               <div className="text-slate-500">
@@ -246,7 +293,7 @@ const Page = () => {
               className="flex items-center justify-center w-10 h-10 rounded-full
               border-none
             bg-slate-300 group-[.is-active]:bg-orange-500 text-slate-500 group-[.is-active]:text-gray-950
-              shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+              shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
             >
               <svg
                 className="fill-current"
@@ -262,15 +309,23 @@ const Page = () => {
             </div>
 
             <div
-              className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]
+              className="w-[calc(100%-5rem)]
+               md:w-[calc(50%-3rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-               xl:h-[24vh]
-           bg-slate-700 p-2 rounded border border-none shadow"
+               xl:h-[30vh]
+           bg-transparent border border-1 border-yellow-800  p-2 rounded  shadow"
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">Banco de Dados</div>
-                <time className="font-caveat font-medium text-indigo-500">
-                  Icons
+                <time className=" ">
+                
+                
+                <div className="flex items-strat gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="30" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={MySQL}
+                     className="color: transparent;"/></div>
                 </time>
               </div>
               <div className="text-slate-500">
@@ -291,7 +346,7 @@ const Page = () => {
           before:ml-[3.6rem] before:-translate-x-px 
           md:before:mx-auto md:before:translate-x-0
           before:h-full before:w-0.5 before:bg-gradient-to-b
-          before:from-transparent before:via-slate-300 
+          before:from-transparent before:via-orange-500
           before:to-transparent " 
         >
           <div
@@ -325,12 +380,17 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-           xl:h-[24vh]
-           bg-slate-700 p-4 rounded border-none shadow" >
+           xl:h-[30vh]
+           bg-transparent border border-1 border-yellow-800 p-4 rounded " >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">ORM</div>
-                <time className="font-caveat font-medium text-indigo-500">
-                  Icons
+                <time className="">
+                <div className="flex items-strat gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="30" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={Prisma}
+                     className="color: transparent;"/></div>
                 </time>
               </div>
               <div className="text-slate-500">
@@ -376,12 +436,17 @@ const Page = () => {
               className="w-[calc(100%-5rem)] md:w-[calc(100%-16rem)] md:h-[15vh]
               lg:w-[calc(50%-2.5rem)]
             xl:h-[24vh]
-            bg-slate-700 p-2 rounded border-none shadow"
+            bg-transparent border border-1 border-yellow-800 p-2 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">NoSQL</div>
                 <time className="font-caveat font-medium text-indigo-500">
-                  Icons
+                <div className="flex items-strat gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="21" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={MongoDB}
+                     className="color: transparent;"/></div>
                 </time>
               </div>
               <div className="text-slate-500">
@@ -421,13 +486,18 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-             xl:h-[24vh]
-             bg-slate-700 p-4 rounded border-none shadow"
+             xl:h-[30vh]
+             bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">React.JS</div>
                 <time className="font-caveat font-medium text-indigo-500">
-                  Icons
+                <div className="flex items-strat gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="30" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={ReactJs}
+                     className="color: transparent;"/></div>
                 </time>
               </div>
               <div className="text-slate-500">
@@ -472,12 +542,17 @@ const Page = () => {
               className="w-[calc(100%-5rem)] md:w-[calc(100%-16rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
             xl:h-[24vh]
-             bg-slate-700 p-2 rounded border-none shadow"
+             bg-transparent border border-1 border-yellow-800 p-2 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">Cloud</div>
                 <time className="font-caveat font-medium text-indigo-500">
-                  Icons
+                <div className="flex items-strat gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="30" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={Cloud}
+                     className="color: transparent;"/></div>
                 </time>
               </div>
               <div className="text-slate-500">
@@ -513,25 +588,32 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]  lg:w-[calc(50%-2.5rem)]
              xl:h-[24vh]
-             bg-orange-500 p-2 rounded border-none shadow"
+             bg-transparent p-2 rounded border border-1 border-gray-100"
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
-                <div className="font-bold text-gray-950">
+                <div className="font-bold text-orange-500">
                   Project Integration
                 </div>
-                <time className="font-caveat font-medium text-indigo-500">
-                  Icons
+                <time className="">
+                <div className="flex items-strat gap-2">
+                  <Image alt="Formação Full-Stack"
+                   loading="lazy" width="80" height="19"
+                    decoding="async" data-nimg="1" 
+                    src={Project}
+                     className="color: transparent;"/></div>
+                
                 </time>
               </div>
-              <div className="text-slate-50">
+              <div className="text-orange-500">
                 Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum
                 morbi blandit cursus risus.
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      
+ </section>
   );
 };
 

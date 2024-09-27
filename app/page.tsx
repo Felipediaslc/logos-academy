@@ -1,6 +1,8 @@
 import HomePage from "../components/Home/page";
 import Programas  from "../components/Programas/page";
-import Cursos from "../components/Cursos/page"
+import Cursos from "../components/Cursos/page";
+
+
 
 export default function Home() {
   return (
@@ -16,7 +18,8 @@ export default function Home() {
        <HomePage/>
        <Cursos />
        <Programas />
-
+     
+      
      </main>
     
    </div>
