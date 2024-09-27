@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
     <div className="flex  flex-wrap p-6 xl:-mt-[8rem]">
     <div className="flex items-center w-full lg:w-1/2">
       <div className="max-w-2xl mb-8">
-        <h1 className="text-[4rem] -mt-[1rem] font-cooper-bold leading-none
+        <h1 className="text-[4rem] -mt-[6rem] font-cooper-bold leading-none
         tracking-tight text-gray-950 lg:text-4xl lg:leading-none lg:mt-3 
          xl:text-[6rem] xl:p-8  xl:leading-none ">
         Encontre seu futuro
