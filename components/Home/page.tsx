@@ -32,13 +32,15 @@ const HomePage: React.FC = () => {
          xl:text-[6rem] xl:p-8  xl:leading-none ">
         Encontre seu futuro
         </h1>
-        <p className="py-5 -mt-3 text-xl leading-normal
+        <p className="py-5 -mt-6 text-xl leading-normal
           lg:text-xl xl:text-2xl xl:-mt-10 text-gray-300">
           A plataforma completa pra você aprender programação do zero no seu ritmo,
            se tornar Full Stack e se especializar em diversas tecnologias.
         </p>
 
-        <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+        <div className="flex flex-col -mt-[1.3rem]
+        items-start space-y-3 sm:space-x-4
+         sm:space-y-0 sm:items-center sm:flex-row">
           <ul className="flex flex-wrap ">
             <li>
             <div className="group/tag w-fit border border-transparent bg-gradient-to-b
