@@ -48,10 +48,10 @@ const Header = () => {
                  md:pb-0 pb-12 absolute md:static
                   bg-orange-500 md:z-auto z-[-1]
                    left-0 w-full md:w-auto md:pl-0 pl-9
-                    transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
+                    transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-700px] lg:top-[-490px]'}`}>
                 {
                     Links.map((link) => (
-                    <li key={link.name} className=' md:ml-8 md:my-0 my-14 font-cooper-bold'>
+                    <li key={link.name} className=' text-center -ml-[2.5rem] md:ml-8 md:my-0 my-14 font-cooper-bold'>
                         <a href={link.link} className='text-gray-950 text-[1.2rem]
                          hover:text-slate-100 md:text-[1rem] font-cooper-bold tracking-widest duration-500'>{link.name}</a>
                     </li>))

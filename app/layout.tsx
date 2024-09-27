@@ -18,6 +18,11 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Logos Academy",
   description: "Curso Full-Stack JavaScript",
+  icons:{
+    icon: ['/logos-aba.png?v=100'],
+    apple:['/logos-aba.png?v=100'],
+    shortcut:['/logos-aba.png']
+  }
 };
 
 export default function RootLayout({
