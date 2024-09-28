@@ -32,7 +32,7 @@ const HomePage: React.FC = () => {
          xl:text-[6rem] xl:p-8  xl:leading-none ">
         Encontre seu futuro
         </h1>
-        <p className="py-5 -mt-6 text-xl leading-normal
+        <p className="py-5 -mt-6 text-[1rem] leading-normal
           lg:text-xl xl:text-2xl xl:-mt-10 text-gray-300">
           A plataforma completa pra você aprender programação do zero no seu ritmo,
            se tornar Full Stack e se especializar em diversas tecnologias.
