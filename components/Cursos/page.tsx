@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Html5 from "../../public/html.png";
+import Html5 from "../../public/html5.png";
 import Css from "../../public/css.png";
 import Javascript from "../../public/js.png";
 import Git from "../../public/git.png";
@@ -38,13 +38,13 @@ const Page = () => {
       </div>
 
       <div
-        className="flex md:p-0 xl:p-0  xl:-mt-[6rem]
+        className="flex md:p-0 xl:p-0   xl:-mt-[1rem]
         justify-center flex-wrap"
       >
         <div
           className=" py-6 px-10
-           
-          xl:px-12  xl:py-16 
+         
+          xl:px-6  xl:py-16 
           xl:w-[49.2vw]    lg:space-y-8 lg:py-16
           space-y-8 relative  
           before:absolute before:inset-0
@@ -84,36 +84,39 @@ const Page = () => {
             </div>
 
             <div
-              className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]
-             lg:w-[calc(50%-3rem)] xl:h-[30vh]
-             bg-transparent border border-1 border-yellow-800 p-4 rounded b"
+              className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] 
+              md:h-[15vh]
+             lg:w-[calc(50%-3rem)] xl:h-[55vh]
+             bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">Html5 Css3 JavaScript</div>
                 <time className="flex items-strat  ">
                 <div className="flex items-strat gap-2">
                   <Image alt="Formação Full-Stack"
-                   loading="lazy" width="30" height="19"
+                   loading="lazy" width="24" height="16"
                     decoding="async" data-nimg="1" 
                     src={Html5}
                      className="color: transparent;"/></div>
                 <div className="flex items-center gap-2">
                   <Image alt="Formação Full-Stack"
-                   loading="lazy" width="30" height="19"
+                   loading="lazy" width="42" height="19"
                     decoding="async" data-nimg="1" 
                     src={Css}
                      className="color: transparent;"/></div>
                 <div className="flex items-center gap-2">
                   <Image alt="Formação Full-Stack"
-                   loading="lazy" width="30" height="19"
+                   loading="lazy" width="35" height="19"
                     decoding="async" data-nimg="1" 
                     src={Javascript}
                      className="color: transparent;"/></div>
                 </time>
               </div>
-              <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum
-                morbi blandit cursus risus.
+              <div className="text-slate-50 text-justify xl:text-[0.8rem]">
+              HTML5 é a quinta versão da linguagem de marcação padrão para páginas web. O CSS, ou Cascading Style Sheets,
+               é uma linguagem de folha de estilo usada para descrever a aparência e a formatação de um documento escrito em HTML.
+               JavaScript (JS) é uma linguagem de programação usada para criar páginas web interativas, com funcionalidades como animações,
+                mapas interativos e atualização de feeds
               </div>
             </div>
           </div>
@@ -151,7 +154,7 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(100%-15rem)] md:h-[15vh]
               lg:w-[calc(50%-2.5rem)]
-              xl:h-[30vh]
+              xl:h-[33vh]
             bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
@@ -159,21 +162,21 @@ const Page = () => {
                 <time className="flex items-strat">
                 <div className="flex items-strat gap-2">
                   <Image alt="Formação Full-Stack"
-                   loading="lazy" width="30" height="19"
+                   loading="lazy" width="25" height="19"
                     decoding="async" data-nimg="1" 
                     src={Git}
                      className="color: transparent;"/></div>
                 <div className="flex items-center gap-2">
                   <Image alt="Formação Full-Stack"
-                   loading="lazy" width="30" height="19"
+                   loading="lazy" width="25" height="19"
                     decoding="async" data-nimg="1" 
                     src={GitHub}
                      className="color: transparent;"/></div>
                 </time>
               </div>
-              <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum
-                morbi blandit cursus risus.
+              <div className="text-slate-50 text-justify xl:text-[0.8rem]">
+              Git é um sistema de controle de versão distribuído (dVCS).
+              GitHub é uma plataforma de desenvolvimento colaborativo que permite aos desenvolvedores armazenar, compartilhar e colaborar em projetos de software.
               </div>
             </div>
           </div>
@@ -208,23 +211,24 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh] 
                lg:w-[calc(50%-2.5rem)]
-              xl:h-[30vh]
-             bg-transparent border border-1 border-yellow-800 p-4 rounded "
+              xl:h-[33vh]
+             bg-transparent border border-1 border-yellow-800 p-3 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">Node.JS</div>
                 <time className="">
                 <div className="flex items-strat gap-2">
                   <Image alt="Formação Full-Stack"
-                   loading="lazy" width="30" height="19"
+                   loading="lazy" width="25" height="19"
                     decoding="async" data-nimg="1" 
                     src={NodeJS}
                      className="color: transparent;"/></div>
                 </time>
               </div>
-              <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum
-                morbi blandit cursus risus.
+              <div className="text-slate-50 text-justify xl:text-[0.8rem]">
+              O NodeJS é construído sob o motor v8 do Google Chrome. 
+              Isso o torna um ambiente de execução Javascript e faz com que
+               o idioma não dependa mais do navegador para ser executado.
               </div>
             </div>
           </div>
@@ -262,23 +266,23 @@ const Page = () => {
               className="w-[calc(100%-5rem)] md:w-[calc(100%-15rem)]
                md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-             xl:h-[30vh]
-             bg-transparent border border-1 border-yellow-800 p-2 rounded"
+             xl:h-[33vh]
+             bg-transparent border border-1 border-yellow-800 p-4 rounded"
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">Express</div>
                 <time className="">
                 <div className="flex items-strat gap-2">
                   <Image alt="Formação Full-Stack"
-                   loading="lazy" width="30" height="19"
+                   loading="lazy" width="25" height="50"
                     decoding="async" data-nimg="1" 
                     src={Express}
                      className="color: transparent;"/></div>
                 </time>
               </div>
-              <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum
-                morbi blandit cursus risus.
+              <div className="text-slate-50 text-justify xl:text-[0.8rem]">
+              Express.js é o framework backend mais popular para o Node.js,
+               e faz parte do ecossistema JavaScript.
               </div>
             </div>
           </div>
@@ -312,8 +316,8 @@ const Page = () => {
               className="w-[calc(100%-5rem)]
                md:w-[calc(50%-3rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-               xl:h-[30vh]
-           bg-transparent border border-1 border-yellow-800  p-2 rounded  shadow"
+               xl:h-[33vh]
+           bg-transparent border border-1 border-yellow-800  p-4 rounded  shadow"
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">Banco de Dados</div>
@@ -322,15 +326,15 @@ const Page = () => {
                 
                 <div className="flex items-strat gap-2">
                   <Image alt="Formação Full-Stack"
-                   loading="lazy" width="30" height="19"
+                   loading="lazy" width="25" height="19"
                     decoding="async" data-nimg="1" 
                     src={MySQL}
                      className="color: transparent;"/></div>
                 </time>
               </div>
-              <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum
-                morbi blandit cursus risus.
+              <div className="text-slate-50 text-justify xl:text-[0.8rem]">
+              Banco de Dados relacional é um modelo de organização de dados que armazena informações em tabelas,
+               com o objetivo de facilitar a compreensão das relações entre os dados
               </div>
             </div>
           </div>
@@ -380,22 +384,22 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-           xl:h-[30vh]
+           xl:h-[33vh]
            bg-transparent border border-1 border-yellow-800 p-4 rounded " >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">ORM</div>
                 <time className="">
                 <div className="flex items-strat gap-2">
                   <Image alt="Formação Full-Stack"
-                   loading="lazy" width="30" height="19"
+                   loading="lazy" width="25" height="19"
                     decoding="async" data-nimg="1" 
                     src={Prisma}
                      className="color: transparent;"/></div>
                 </time>
               </div>
-              <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum
-                morbi blandit cursus risus.
+              <div className="text-slate-50 text-justify xl:text-[0.8rem]">
+              O ORM é um recurso utilizado durante a fase de desenvolvimento 
+              de software para mapear objetos presentes em um banco de dados relacional (SQL). 
               </div>
             </div>
           </div>
@@ -435,23 +439,24 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(100%-16rem)] md:h-[15vh]
               lg:w-[calc(50%-2.5rem)]
-            xl:h-[24vh]
-            bg-transparent border border-1 border-yellow-800 p-2 rounded "
+            xl:h-[39vh]
+            bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">NoSQL</div>
                 <time className="font-caveat font-medium text-indigo-500">
                 <div className="flex items-strat gap-2">
                   <Image alt="Formação Full-Stack"
-                   loading="lazy" width="21" height="19"
+                   loading="lazy" width="25" height="19"
                     decoding="async" data-nimg="1" 
                     src={MongoDB}
                      className="color: transparent;"/></div>
                 </time>
               </div>
-              <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum
-                morbi blandit cursus risus.
+              <div className="text-slate-50 text-justify xl:text-[0.8rem]">
+              O NoSQL, também conhecido como (não somente SQL) ou (não SQL),
+               é uma abordagem de projeto de banco de dados que possibilita o armazenamento 
+               e a consulta de dados fora das estruturas tradicionais encontradas nos bancos de dados relacionais.
               </div>
             </div>
           </div>
@@ -486,7 +491,7 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-             xl:h-[30vh]
+             xl:h-[33vh]
              bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
@@ -494,15 +499,15 @@ const Page = () => {
                 <time className="font-caveat font-medium text-indigo-500">
                 <div className="flex items-strat gap-2">
                   <Image alt="Formação Full-Stack"
-                   loading="lazy" width="30" height="19"
+                   loading="lazy" width="25" height="19"
                     decoding="async" data-nimg="1" 
                     src={ReactJs}
                      className="color: transparent;"/></div>
                 </time>
               </div>
-              <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum
-                morbi blandit cursus risus.
+              <div className="text-slate-50 text-justify xl:text-[0.8rem]">
+              O React JS é uma  biblioteca com base na linguagem JavaScript 
+              utilizada para o desenvolvimento de interfaces de usuários (UI) em aplicativos web.
               </div>
             </div>
           </div>
@@ -541,8 +546,8 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(100%-16rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-            xl:h-[24vh]
-             bg-transparent border border-1 border-yellow-800 p-2 rounded "
+            xl:h-[33vh]
+             bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">Cloud</div>
@@ -555,9 +560,9 @@ const Page = () => {
                      className="color: transparent;"/></div>
                 </time>
               </div>
-              <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum
-                morbi blandit cursus risus.
+              <div className="text-slate-50 text-justify xl:text-[0.8rem]">
+              Cloud, ou computação em nuvem, é um termo que se refere a uma 
+              rede de servidores remotos que funcionam como um único ecossistema.
               </div>
             </div>
           </div>
@@ -587,11 +592,11 @@ const Page = () => {
 
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]  lg:w-[calc(50%-2.5rem)]
-             xl:h-[24vh]
-             bg-transparent p-2 rounded border border-1 border-gray-100"
+             xl:h-[33vh]
+             bg-transparent p-4 rounded border border-1 border-gray-100"
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
-                <div className="font-bold text-orange-500">
+                <div className="font-bold text-orange-50">
                   Project Integration
                 </div>
                 <time className="">
@@ -604,9 +609,8 @@ const Page = () => {
                 
                 </time>
               </div>
-              <div className="text-orange-500">
-                Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum
-                morbi blandit cursus risus.
+              <div className="text-orange-50 text-justify xl:text-[0.8rem]">
+              Projeto Integrador em Web é uma disciplina prática para integrar os conhecimentos adquiridos ao longo de um curso Técnico
               </div>
             </div>
           </div>

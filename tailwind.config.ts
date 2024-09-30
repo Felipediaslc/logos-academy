@@ -11,6 +11,11 @@ const config: Config = {
       fontFamily: {
         "cooper-bold": ["Cooper-Bold", "sans-serif"]
        },
+       colors: {
+        
+        'blue-fund': '#',
+       
+      },
     },
   },
   plugins: [],
