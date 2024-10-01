@@ -1,6 +1,7 @@
 import HomePage from "../components/Home/page";
 import Programas  from "../components/Programas/page";
 import Cursos from "../components/Cursos/page";
+import Empresa  from "../components/Empresa/page";
 
 
 
@@ -18,6 +19,7 @@ export default function Home() {
        <HomePage/>
        <Cursos />
        <Programas />
+       <Empresa />
      
       
      </main>
