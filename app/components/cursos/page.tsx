@@ -18,11 +18,16 @@ import Project from "../../../public/project.png"
 
 const Page = () => {
   return (
-    <section   className=" h-screem bg-gray-950  md:px-0 md:py-0  md:w-full md:h-[250vh]  md:bg-gray-950 
-      lg:bg-gray-950  lg:h-[335vh]  xl:w-full xl:bg-gray-950 xl:h-[235vh] xl:py-0  xl:-mt-[1.5rem] xl:justify-center
+    <section   className="-mt-[5rem]   h-screem bg-gray-950
+      md:px-0 md:py-0  md:w-full md:h-[250vh] 
+       md:bg-gray-950  lg:bg-gray-950 
+        lg:h-[335vh]  xl:w-full 
+        xl:bg-gray-950 xl:h-[235vh]
+         xl:py-0  xl:-mt-[1.5rem] 
+         xl:justify-center
       2xl:h-[140vh]" > 
       <div
-        className="mt-[9rem] mb-[3rem] flex flex-col md:mt-[5rem] md:mb-[5rem]
+        className=" py-44 lg:py-0 flex flex-col md:mt-[5rem] md:mb-[5rem]
        lg:mt-[5rem] lg:mb-[5rem]
        xl:mt-[6.1rem] z-0 items-center gap-4"
       >
@@ -38,11 +43,11 @@ const Page = () => {
       </div>
 
       <div
-        className="flex md:p-0 xl:p-0   xl:-mt-[1rem]
+        className="-mt-[8rem] flex md:p-0 xl:p-0   xl:-mt-[1rem]
         justify-center flex-wrap"
       >
         <div
-          className=" py-6 px-10
+          className=" py-0 px-10
          
           xl:px-6  xl:py-16 
           xl:w-[49.2vw]    lg:space-y-8 lg:py-16
