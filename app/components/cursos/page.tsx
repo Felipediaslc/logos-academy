@@ -1,19 +1,19 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Html5 from "../../public/html5.png";
-import Css from "../../public/css.png";
-import Javascript from "../../public/js.png";
-import Git from "../../public/git.png";
-import GitHub from "../../public/github.png";
-import NodeJS from "../../public/node-js.png";
-import Express from "../../public/Express.png";
-import MongoDB from "../../public/mongodb.png";
-import MySQL from "../../public/mysql.png";
-import Prisma from "../../public/prisma.webp";
-import ReactJs from "../../public/react.png";
-import Cloud from "../../public/cloud.png";
-import Project from "../../public/project.png"
+import Html5 from "../../../public/html5.png";
+import Css from "../../../public/css.png";
+import Javascript from "../../../public/js.png";
+import Git from "../../../public/git.png";
+import GitHub from "../../../public/github.png";
+import NodeJS from "../../../public/node-js.png";
+import Express from "../../../public/Express.png";
+import MongoDB from "../../../public/mongodb.png";
+import MySQL from "../../../public/mysql.png";
+import Prisma from "../../../public/prisma.webp";
+import ReactJs from "../../../public/react.png";
+import Cloud from "../../../public/cloud.png";
+import Project from "../../../public/project.png"
 
 
 const Page = () => {

@@ -2,19 +2,19 @@
 
 import React from "react";
 import Image from "next/image";
-import ImageHome from "../../public/home-img.png";
-import html5 from "../../public/html5.png";
-import Css from "../../public/css.png";
-import Javascript from "../../public/js.png";
-import TypeScript from "../../public/ts.png";
-import NodeJS from "../../public/node-js.png";
-import ReactJs from "../../public/react.png";
-import MongoDB from "../../public/mongodb.png";
-import Prisma from "../../public/prisma.webp";
-import MySQL from "../../public/mysql.png";
-import Express from "../../public/Express.png";
-import Git from "../../public/git.png";
-import GitHub from "../../public/github.png";
+import ImageHome from "../../../public/home-img.png";
+import html5 from "../../../public/html5.png";
+import Css from "../../../public/css.png";
+import Javascript from "../../../public/js.png";
+import TypeScript from "../../../public/ts.png";
+import NodeJS from "../../../public/node-js.png";
+import ReactJs from "../../../public/react.png";
+import MongoDB from "../../../public/mongodb.png";
+import Prisma from "../../../public/prisma.webp";
+import MySQL from "../../../public/mysql.png";
+import Express from "../../../public/Express.png";
+import Git from "../../../public/git.png";
+import GitHub from "../../../public/github.png";
 
 
 

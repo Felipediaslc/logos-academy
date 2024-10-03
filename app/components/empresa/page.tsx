@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import logo from "../../public/logos-todo.png";
-import Home from "../../public/empresa.png"
+import logo from "../../../public/logos-todo.png";
+import Home from "../../../public/empresa.png"
 
 
 
@@ -14,9 +14,9 @@ const Page = () => {
         lg:text-start"><div className="flex items-end gap-2 whitespace-nowrap text-start">
             <Image alt="Rocketseat" loading="lazy" 
             width="150"
-             height="20"
+             height="90"
               decoding="async" data-nimg="1" 
-            className="h-10 w-30  color:transparent" 
+            className="h-15 w-30  color:transparent" 
              src={logo} />
                 <strong className="font-medium text-white lg:text-xl">Para Empresas</strong>
                 </div><div className="space-y-4 lg:space-y-6">
