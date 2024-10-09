@@ -11,8 +11,8 @@ const Header = () => {
     const Links = [
         { name: "Cursos", link: "/components/cursos" },
         { name: "Programas", link: "/components/programas" },
-        { name: "Sobre", link: "/" },
-        { name: "Blog", link: "/" },
+        { name: "Sobre", link: "/components/sobre" },
+        { name: "Como funciona", link: "/" },
         { 
             name: "Para empresas", 
             link: "/components/empresa", 

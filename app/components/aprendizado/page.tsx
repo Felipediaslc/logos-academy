@@ -14,11 +14,11 @@ const Page = () => {
   overflow-hidden rounded">
 <div className="rounded flex flex-col gap-[3.75rem] p-6 lg:p-[3.75rem]">
 <div className="flex flex-col items-center gap-6">
-  <div className="group/tag w-fit border border-transparent bg-gradient-to-b
- from-orange-500 to-orange-300 bg-origin-border overflow-hidden rounded">
+  <div className="group/tag w-fit border border-transparent bg-gradient-to-r from-orange-600 to-orange-600/30
+  bg-origin-border overflow-hidden rounded">
 <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9 rounded">
 <span className="text-xs lg:text-sm whitespace-nowrap text-transparent bg-clip-text
- bg-gradient-to-r from-ogarne-500 to-orange-500 font-medium font-mono">Para quem é?_</span>
+ bg-gradient-to-r from-white to-orange-500 font-medium font-mono">Para quem é?_</span>
 </div></div><h2 className="text-center text-2xl font-cooper-bold text-white 
 lg:text-4xl">Independente do seu nível a Logos Academy é para você</h2></div>
 <div className="flex flex-col justify-between gap-8 lg:flex-row">
@@ -48,7 +48,7 @@ src={Aprendiz}/></div>
  from-orange-500 to-orange-300 bg-origin-border overflow-hidden rounded">
 <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9 rounded">
 <span className="text-xs lg:text-sm whitespace-nowrap text-transparent bg-clip-text
- bg-gradient-to-r from-ogange-500 to-orange-500 font-medium font-mono">Também é para quem_</span>
+ bg-gradient-to-r from-white to-orange-500 font-medium font-mono">Também é para quem_</span>
  </div></div><div className="flex-grow border-t border-orange-500"></div></div>
  <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
 <div className="group flex flex-col items-center gap-2">
