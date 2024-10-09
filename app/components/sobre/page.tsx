@@ -20,7 +20,7 @@ const Page = () => {
 <div className="relative mx-auto flex w-full max-w-[1256px] flex-col items-center justify-center px-5">
 <div className="mb-4 flex w-full flex-col items-center lg:mb-0">
 <div className="group/tag w-fit border border-transparent bg-gradient-to-b
-from-orange-600 to-orange-600/30 bg-origin-border overflow-hidden rounded">
+from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
 <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9
 rounded">
 <span className="text-xs lg:text-sm whitespace-nowrap text-transparent
@@ -61,7 +61,7 @@ src={Instrutor} />
 </div>
 <div className="space-y-4 lg:max-w-[524px]">
 <div className="group/tag w-fit border border-transparent bg-gradient-to-b
-from-orange-600 to-orange-600/30 bg-origin-border overflow-hidden rounded">
+from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
 <div className="flex items-center bg-black w-fit p-2 max-h-8 lg:px-4 lg:h-9 rounded">
 <span className="text-xs lg:text-sm whitespace-nowrap text-transparent
  bg-clip-text bg-gradient-to-r from-white to-orange-500 font-medium font-mono">

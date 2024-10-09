@@ -14,7 +14,7 @@ const Page = () => {
   overflow-hidden rounded">
 <div className="rounded flex flex-col gap-[3.75rem] p-6 lg:p-[3.75rem]">
 <div className="flex flex-col items-center gap-6">
-  <div className="group/tag w-fit border border-transparent bg-gradient-to-r from-orange-600 to-orange-600/30
+  <div className="group/tag w-fit border border-transparent bg-gradient-to-r from-orange-600 to-orange-600
   bg-origin-border overflow-hidden rounded">
 <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9 rounded">
 <span className="text-xs lg:text-sm whitespace-nowrap text-transparent bg-clip-text
@@ -45,7 +45,7 @@ src={Aprendiz}/></div>
 <div className="flex items-center gap-2 lg:gap-8">
 <div className="flex-grow border-t border-orange-500"></div>
 <div className="group/tag w-fit border border-transparent bg-gradient-to-b
- from-orange-500 to-orange-300 bg-origin-border overflow-hidden rounded">
+ from-orange-500 to-orange-600 bg-origin-border overflow-hidden rounded">
 <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9 rounded">
 <span className="text-xs lg:text-sm whitespace-nowrap text-transparent bg-clip-text
  bg-gradient-to-r from-white to-orange-500 font-medium font-mono">Também é para quem_</span>
