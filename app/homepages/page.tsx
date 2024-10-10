@@ -1,5 +1,4 @@
 import Home from "../components/home/page";
-import Programas  from "../components/programas/page";
 import Cursos from "../components/cursos/page";
 import Aprendizado from "../components/aprendizado/page";
 
@@ -19,7 +18,6 @@ export default function HomePages() {
      items-center justify-center  sm:items-start xl:items-end">
        <Home/>
        <Cursos />
-       <Programas />
        <Aprendizado />
       
      
