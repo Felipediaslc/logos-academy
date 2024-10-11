@@ -78,7 +78,7 @@ const Page = () => {
           <div className="w-full  lg:flex lg:flex-col lg:items-center lg:p-0    ">
             <Image alt="" loading="eager" width="1303" height="1332"
               decoding="async" data-nimg="1"
-              className=" -mt-[3.5rem] lg:mt-[1.5rem]
+              className=" -mt-[1rem] lg:mt-[1.5rem]
             color:transparen rounded-full"
               src={LogosAcademy} />
 
@@ -228,7 +228,7 @@ from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
                   </div>
                   <p className="text-2xl font-cooper-bold text-white lg:text-4xl">
                     Daniel Cavalcante de Souza</p>
-                  <p className="text-sm lg:text-base text-white ">
+                  <p className="text-sm lg:text-base text-white text-justify ">
                     Líder Técnico | CEO e Professor na Logos Academy | Tech Lead | Node.JS | ReactJS | React Native.
                     Apaixonado por codar, aprender novas ferramentas e tecnologias
                     e estar sempre à frente do que há de mais atual no mercado de
@@ -303,7 +303,7 @@ from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
                   <p className="text-2xl font-cooper-bold text-white lg:text-4xl">
                     Gregorio Arlindo Pinheiro Jr
                   </p>
-                  <p className="text-sm lg:text-base text-white ">
+                  <p className="text-sm lg:text-base text-white text-justify">
                     Desenvolvedor Full Stack | NodeJS | React.
                     Sou apaixonado por programação, sempre buscando aprender novas ferramentas
                     e tecnologias para me manter atualizado com as tendências do mercado.

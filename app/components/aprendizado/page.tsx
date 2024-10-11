@@ -19,7 +19,7 @@ const Page = () => {
 <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9 rounded">
 <span className="text-xs lg:text-sm whitespace-nowrap text-transparent bg-clip-text
  bg-gradient-to-r from-white to-white font-medium font-mono">Para quem é?_</span>
-</div></div><h2 className="text-center text-2xl font-cooper-bold text-white 
+</div></div><h2 className="text-center text-2xl font-cooper-bold text-orange-500 
 lg:text-4xl">Independente do seu nível a Logos Academy é para você</h2></div>
 <div className="flex flex-col justify-between gap-8 lg:flex-row">
 <div className="lg:max-w-[25.875rem]">
