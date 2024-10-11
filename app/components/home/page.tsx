@@ -26,15 +26,15 @@ const HomePage: React.FC = () => {
       2xl:-mt-3 2xl:w-screen">
     <div className="flex  flex-wrap p-6 xl:-mt-[8rem]">
     <div className="flex items-center w-full lg:w-1/2">
-      <div className="max-w-2xl mb-8">
-        <h1 className="text-[4rem] -mt-[6rem] font-cooper-bold leading-none
-        tracking-tight text-gray-950 lg:text-4xl lg:leading-none
-         lg:mt-3 
-         xl:text-[6rem] xl:py-2 xl:pl-1 xl:leading-none ">
+      <div className="max-w-2xl lg:-mt-32  mb-8">
+        <h2 className="text-[4rem]   -mt-[6rem] font-cooper-bold leading-none
+        tracking-tight text-gray-950 lg:w-[30vw] lg:text-3xl lg:leading-none
+         lg:mt-1 lg:mb-3
+         xl:text-[5rem] xl:py-2 xl:pl-1 xl:leading-none ">
         Encontre seu futuro
-        </h1>
+        </h2>
         <p className="py-5 xl:py-6  -mt-6 text-[1rem] leading-normal
-          lg:text-xl xl:text-2xl xl:-mt-10 xl:pl-1 text-slate-50">
+          lg:text-xl xl:text-1xl xl:-mt-10 xl:pl-1 lg:mb-3 text-white">
           A plataforma completa pra você aprender programação do zero no seu ritmo,
            se tornar Full Stack e se especializar em diversas tecnologias.
         </p>
