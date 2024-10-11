@@ -24,13 +24,14 @@ const HomePage: React.FC = () => {
       xl:h-[110vh]  w-screen  flex items-center justify-center bg-cover bg-center
       xl:w-screen
       2xl:-mt-3 2xl:w-screen">
-    <div className="flex  flex-wrap p-6 xl:-mt-[8rem]">
-    <div className="flex items-center w-full lg:w-1/2">
-      <div className="max-w-2xl lg:-mt-32  mb-8">
+    <div className="flex   flex-wrap p-6 xl:-mt-[8rem]">
+    <div className="flex  2xl:-ml-[12rem] items-center w-full lg:w-1/2">
+      <div className="max-w-2xl lg:-mt-36  mb-8">
         <h2 className="text-[4rem]   -mt-[6rem] font-cooper-bold leading-none
         tracking-tight text-gray-950 lg:w-[30vw] lg:text-3xl lg:leading-none
          lg:mt-1 lg:mb-3
-         xl:text-[5rem] xl:py-2 xl:pl-1 xl:leading-none ">
+         xl:text-[5rem] xl:py-2 xl:pl-1 xl:leading-none
+          2xl:w-[25vw]  ">
         Encontre seu futuro
         </h2>
         <p className="py-5 xl:py-6  -mt-6 text-[1rem] leading-normal
@@ -248,7 +249,7 @@ const HomePage: React.FC = () => {
         </div>
       </div>
     </div>
-    <div className="flex -mt-16 lg:mt-0 items-center justify-center w-full lg:w-1/2">
+    <div className="flex 2xl:ml-48 -mt-16 lg:mt-0 items-center justify-center w-full lg:w-1/2">
       <div className="">
         <Image
           src={ImageHome}
