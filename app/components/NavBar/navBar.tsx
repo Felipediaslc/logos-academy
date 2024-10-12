@@ -20,8 +20,9 @@ const Header = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className='w-full fixed 2xl:fixed z-10 top-0 left-0'>
-            <div className='md:flex items-center justify-between bg-orange-500 py-3 md:px-3 px-7'>
+        <div className=' w-full fixed 2xl:fixed z-10 top-0 left-0'>
+            <div className='  md:flex items-center justify-between bg-orange-500 py-3 
+            md:px-3 px-7'>
                 {/* Logo section */}
                 <Link href="/">
                 <div className='md:p-0 cursor-pointer flex items-center gap-1'>
@@ -44,12 +45,12 @@ const Header = () => {
                 </div>
 
                 {/* Link items */}
-                <ul className={`lg:mb-0 -mt-1 lg:mt-0 md:h-0 2xl:mr-[9rem] md:flex md:items-center
-                    md:pb-0 pb-12 absolute md:static bg-orange-500 md:z-auto z-[-1]
-                    left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in
+ <ul className={`lg:mb-0 -mt-1 lg:mt-0   md:h-0 2xl:mr-[9rem] md:flex md:items-center md:py-2
+md:pb-0 pb-12 absolute md:static bg-orange-500 md:z-auto z-[-1]
+    left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in
                     ${open ? 'top-12' : 'top-[-700px] lg:top-[-490px]'}`}>
                     {Links.map((link) => (
-                        <li key={link.name} className='text-center -ml-[2.5rem] md:ml-8 md:my-0 my-14 font-cooper-bold'>
+                        <li key={link.name} className='   text-center -ml-[2.5rem] md:ml-8 md:my-0 my-14 font-cooper-bold'>
                             <a
                                 href={link.link}
                                 target={link.name === "Para empresas" ? "_blank" : "_self"} // Abrir em nova aba para "Para empresas"
@@ -58,7 +59,7 @@ const Header = () => {
                                         setOpen(false); // Fecha o menu ao clicar no link "Para empresas"
                                     }
                                 }}
-                                className='text-gray-950 text-[1.2rem] hover:text-slate-100 md:text-[1rem] font-cooper-bold tracking-widest duration-500'>
+                                className=' text-gray-950 text-[1.2rem] hover:text-slate-100 md:text-[1rem] font-cooper-bold tracking-widest duration-500'>
                                 {link.name}
                             </a>
                         </li>

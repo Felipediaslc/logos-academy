@@ -47,7 +47,7 @@ const Page = () => {
                 </div>
 
                 <h2 className="mt-6 w-[100vw] text-center text-2xl 
-            font-cooper-bold text-orange-400 lg:w-[30vw]
+            font-cooper-bold text-orange-400  md:w-[50vw] lg:w-[30vw]
             lg:text-3xl">
                   Somos uma plataforma de aprendizado contínuo em programação.
                 </h2>
