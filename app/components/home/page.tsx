@@ -29,7 +29,8 @@ const HomePage: React.FC = () => {
     <div className="flex  2xl:-ml-[12rem] items-center w-full lg:w-1/2">
       <div className="max-w-2xl lg:-mt-36  mb-8">
         <h2 className="text-[4rem] py-3  -mt-[6rem] font-cooper-bold leading-none
-        tracking-tight text-gray-950 sm:py-3 md:py-3  md:text-[5rem]   md:w-[49vw] lg:w-[30vw] lg:text-3xl lg:leading-none
+        tracking-tight text-gray-950 sm:py-3 md:py-3 md:mt-[5rem] md:text-[5rem]
+           md:w-[49vw] lg:w-[30vw] lg:text-3xl lg:leading-none
          lg:mt-1 lg:mb-3
          xl:text-[5rem] xl:py-2 xl:pl-1 xl:leading-none xl:w-[35vw]
           2xl:w-[25vw]  ">

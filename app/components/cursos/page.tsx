@@ -63,7 +63,7 @@ const Page = () => {
             className="relative  flex items-center 
             lg:justify-normal lg:p-0 xl:justify-normal xl:p-0
             justify-between  md:justify-start md:pr-[1rem] md:h-[10rem]
-            xl:mr-4
+            xl:mr-4 
             sm:justify-start sm:pr-[15rem]
             md:odd:flex-row-reverse group 
             is-active"
@@ -90,7 +90,7 @@ const Page = () => {
 
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] 
-              md:h-[15vh]
+              md:h-[15vh]  xl:h-[63vh] lg:h-[61vh]
              lg:w-[calc(50%-3rem)] xl:h-[55vh]
              bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
@@ -159,7 +159,7 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(100%-15rem)] md:h-[15vh]
               lg:w-[calc(50%-2.5rem)]
-              xl:h-[33vh]
+              xl:h-[40vh] lg:h-[40vh]
             bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
@@ -216,7 +216,7 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh] 
                lg:w-[calc(50%-2.5rem)]
-              xl:h-[33vh]
+              xl:h-[40vh] lg:h-[40vh]
              bg-transparent border border-1 border-yellow-800 p-3 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
@@ -271,7 +271,7 @@ const Page = () => {
               className="w-[calc(100%-5rem)] md:w-[calc(100%-15rem)]
                md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-             xl:h-[33vh]
+             xl:h-[40vh] lg:h-[40vh]
              bg-transparent border border-1 border-yellow-800 p-4 rounded"
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
@@ -321,7 +321,7 @@ const Page = () => {
               className="w-[calc(100%-5rem)]
                md:w-[calc(50%-3rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-               xl:h-[33vh]
+               xl:h-[40vh] lg:h-[40vh]
            bg-transparent border border-1 border-yellow-800  p-4 rounded  shadow"
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
@@ -389,7 +389,7 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-           xl:h-[33vh]
+           xl:h-[40vh] lg:h-[40vh]
            bg-transparent border border-1 border-yellow-800 p-4 rounded " >
               <div className="flex items-center justify-between space-x-2 mb-1">
                 <div className="font-bold tracking-widest text-orange-500">ORM</div>
@@ -444,7 +444,7 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(100%-16rem)] md:h-[15vh]
               lg:w-[calc(50%-2.5rem)]
-            xl:h-[39vh]
+            xl:h-[45vh] lg:h-[45vh]
             bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
@@ -496,7 +496,7 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-             xl:h-[33vh]
+             xl:h-[40vh] lg:h-[40vh]
              bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
@@ -551,7 +551,7 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(100%-16rem)] md:h-[15vh]
              lg:w-[calc(50%-2.5rem)]
-            xl:h-[33vh]
+            xl:h-[40vh] lg:h-[40vh]
              bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
@@ -597,7 +597,7 @@ const Page = () => {
 
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]  lg:w-[calc(50%-2.5rem)]
-             xl:h-[33vh]
+             xl:h-[40vh] lg:h-[40vh]
              bg-transparent p-4 rounded border border-1 border-gray-100"
             >
               <div className="flex items-center justify-between space-x-2 mb-1">
