@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
         <h2 className="text-[4rem] py-3  -mt-[6rem] font-cooper-bold leading-none
         tracking-tight text-gray-950 sm:py-3 md:py-3  md:text-[5rem]   md:w-[49vw] lg:w-[30vw] lg:text-3xl lg:leading-none
          lg:mt-1 lg:mb-3
-         xl:text-[5rem] xl:py-2 xl:pl-1 xl:leading-none
+         xl:text-[5rem] xl:py-2 xl:pl-1 xl:leading-none xl:w-[35vw]
           2xl:w-[25vw]  ">
         Encontre seu futuro
         </h2>
