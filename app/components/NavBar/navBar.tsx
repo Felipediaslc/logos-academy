@@ -45,7 +45,8 @@ const Header = () => {
                 </div>
 
                 {/* Link items */}
- <ul className={`lg:mb-0 -mt-1 lg:mt-0   md:h-0 2xl:mr-[9rem] md:flex md:items-center md:py-2
+ <ul className={`lg:mb-0 -mt-1 lg:mt-0   md:h-0  xl:mr-6 2xl:mr-[9rem]
+  md:flex md:items-center md:py-2
 md:pb-0 pb-12 absolute md:static bg-orange-500 md:z-auto z-[-1]
     left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in
                     ${open ? 'top-12' : 'top-[-700px] lg:top-[-490px]'}`}>
