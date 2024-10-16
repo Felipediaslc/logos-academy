@@ -91,7 +91,7 @@ const Page = () => {
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] 
               md:h-[15vh]  xl:h-[63vh] lg:h-[61vh]
-             lg:w-[calc(50%-3rem)] xl:h-[55vh]
+             lg:w-[calc(50%-3rem)] 
              bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
               <div className="flex items-center justify-between space-x-2 mb-1">

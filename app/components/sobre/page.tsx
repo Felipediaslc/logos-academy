@@ -2,13 +2,13 @@
 import React from "react";
 import Image from "next/image";
 import Instrutor from "../../../public/danielcaval.png";
-import LogosAcademy from "../../../public/logo-sob.png";
+import LogosAcademy from "../../../public/LOGOS-ACADEMY.gif";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../ui/accordion"
+} from "../ui/accordion";
 
 
 
@@ -25,8 +25,8 @@ const Page = () => {
       <section className="w-full h-[100vh] bg-gray-950 pb-20 pt-10">
         <div className="mx-auto 
         flex w-[100vw]  -mt-[2.5rem]
-         flex-col gap-6 px-5 
-         lg:flex-row lg:justify-between lg:-mt-[10rem] lg:w-[100vw]
+         flex-col gap-3 px-5 
+         lg:flex-row lg:justify-between lg:-mt-[5rem] lg:w-[100vw]
          2xl:-mt-[15rem]">
           <div className="  
            lg:-ml-7  lg:pt-20 flex w-full
@@ -76,12 +76,12 @@ const Page = () => {
 
 
           <div className="w-full  lg:flex lg:flex-col lg:items-center lg:p-0    ">
-            <Image alt="" loading="eager" width="1303" height="1332"
+            <Image alt="" loading="eager" width="500" height="500"
               decoding="async" data-nimg="1"
-              className=" -mt-[1rem] lg:mt-[1.5rem]
+              className=" -mt-[1rem] lg:mt-[1.5rem] lg:-ml-3
             color:transparen rounded-full"
               src={LogosAcademy} />
-
+   
           </div>
         </div></section>
 
