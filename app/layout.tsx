@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import ConditionalNavBar from "../app/components/routPage/rout"
 
-import Nav from "./components/NavBar/navBar"
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,7 +36,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Nav />
+        <ConditionalNavBar /> {/* Renderiza o menu condicionamente */}
         {children}
       </body>
     </html>

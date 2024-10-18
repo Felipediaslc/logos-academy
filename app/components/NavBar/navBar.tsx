@@ -5,16 +5,19 @@ import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
 import Image from "next/image";
 import ImageNav from "../../../public/img-navbar.png";
 import Button from "../ui/Button";
-import Link from 'next/link'
+import Link from 'next/link';
+
 
 const Header = () => {
+
+   
     const Links = [
         { name: "Cursos", link: "/components/cursos" },
         { name: "Sobre", link: "/components/sobre" },
         { 
             name: "Para empresas", 
             link: "/components/empresa", 
-            target: "_blank", // Adicionado o target
+            target: "_self", // Adicionado o target
         },
     ];
     const [open, setOpen] = useState(false);
@@ -54,10 +57,11 @@ md:pb-0 pb-12 absolute md:static bg-orange-500 md:z-auto z-[-1]
                         <li key={link.name} className='   text-center -ml-[2.5rem] md:ml-8 md:my-0 my-14 font-cooper-bold'>
                             <a
                                 href={link.link}
-                                target={link.name === "Para empresas" ? "_blank" : "_self"} // Abrir em nova aba para "Para empresas"
+                                target={link.name === "Para empresas" ? "_self" : "_self"} // Abrir em nova aba para "Para empresas"
                                 onClick={() => {
                                     if (link.name === "Para empresas") {
-                                        setOpen(false); // Fecha o menu ao clicar no link "Para empresas"
+                                       
+                                        setOpen(true); // Fecha o menu ao clicar no link "Para empresas"
                                     }
                                 }}
                                 className=' text-gray-950 text-[1.2rem] hover:text-slate-100 md:text-[1rem] font-cooper-bold tracking-widest duration-500'>

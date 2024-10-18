@@ -13,11 +13,14 @@ import MySQL from "../../../public/mysql.png";
 import Prisma from "../../../public/prisma.webp";
 import ReactJs from "../../../public/react.png";
 import Cloud from "../../../public/cloud.png";
-import Project from "../../../public/project.png"
+import Project from "../../../public/project.png";
+
 
 
 const Page = () => {
   return (
+    <>
+ 
     <section   className="-mt-[5rem]   h-screem bg-gray-950
       md:px-0 md:py-0  md:w-full md:h-[250vh] 
        md:bg-gray-950  lg:bg-gray-950 
@@ -623,6 +626,7 @@ const Page = () => {
         </div>
       
  </section>
+ </>
   );
 };
 
