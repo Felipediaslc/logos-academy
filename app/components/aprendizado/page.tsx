@@ -26,7 +26,7 @@ lg:text-4xl">Independente do seu nível a Logos Academy é para você</h2></div>
 <div className="mt-6 w-full flex-1 border-b border-orange-500 pb-6 last:border-none">
 <span className="text-xl font-cooper-bold text-white lg:text-2xl">Para aprender do zero</span>
 <p className="mt-2 text-sm text-white lg:text-base">
-Fundamentos da programação web HTML, CSS, Git, banco de dados, back-end e front-end.</p>
+Fundamentos da programação web HTML, CSS, Git, banco de dados relacional e não relacional, back-end e front-end.</p>
 </div><div className="mt-6 w-full flex-1 border-b border-orange-500 pb-6 last:border-none">
 <span className="text-xl font-cooper-bold text-white lg:text-2xl">Para se especializar</span>
 <p className="mt-2 text-sm text-white lg:text-base">

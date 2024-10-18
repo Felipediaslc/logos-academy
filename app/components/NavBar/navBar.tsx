@@ -69,10 +69,11 @@ md:pb-0 pb-12 absolute md:static bg-orange-500 md:z-auto z-[-1]
                             </a>
                         </li>
                     ))}
-
-                    <Button>
+                   <Link href="/components/cadastUser">
+                    <Button >
                         Inscreva-se
                     </Button>
+                    </Link>
                 </ul>
             </div>
         </div>
