@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
       2xl:-mt-3 2xl:w-screen">
     <div className="flex  -mt-[3.5rem]  md:-mt-[7rem] 
      flex-wrap p-6 xl:-mt-[6rem]">
-    <div className="flex  2xl:-ml-[12rem] items-center w-full lg:w-1/2">
+    <div className="flex 2xl:mt-3  2xl:ml-[2rem] items-center w-full lg:w-1/2">
       <div className="max-w-2xl lg:-mt-36  mb-8">
         <h2 className="text-[4rem] py-3  -mt-[6rem] font-cooper-bold leading-none
         tracking-tight text-gray-950 sm:py-3 md:py-3 md:mt-[5rem] md:text-[5rem]
@@ -252,7 +252,7 @@ const HomePage: React.FC = () => {
       </div>
     </div>
     <div className="flex   md:mt-20
-     2xl:ml-48 -mt-16 lg:mt-0 items-center justify-center w-full lg:w-1/2">
+     2xl:-mr-32 -mt-16 lg:mt-0 items-center justify-center w-full lg:w-1/2">
       <div className="  ">
         <Image
           src={ImageHome}
