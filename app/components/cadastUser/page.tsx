@@ -99,7 +99,7 @@ const RegisterForm: React.FC = () => {
     
        
   <div className="md:w-8/12 lg:ms-6 
-   lg:w-5/12 bg-transparent pt-36 lg:pt-6">
+   lg:w-5/12 bg-white pt-36 lg:pt-6">
 
   <div className='flex font-cooper-bold justify-center -mt-6 pr-3 pb-6
   lg:pr-[15rem]'>
