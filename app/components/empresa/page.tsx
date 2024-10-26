@@ -199,7 +199,7 @@ const Page: React.FC = () => {
                   <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9rounded">
                     <span className="text-xs lg:text-sm whitespace-nowrap text-transparent
                 bg-clip-text bg-gradient-to-r from-white to-white font-medium font-mono">
-                      Sobre a Logos Academy_
+                      FALE CONOSCO_
                     </span>
                   </div>
                 </div>
@@ -207,11 +207,11 @@ const Page: React.FC = () => {
                 <h2 className="mt-6 w-[100vw] text-center text-2xl 
             font-cooper-bold text-orange-400  md:w-[50vw] lg:w-[30vw]
             lg:text-3xl">
-                  Somos uma plataforma de aprendizado contínuo em programação.
+                  Empresas já embarcaram com a gente.
                 </h2>
-                <p className="mt-6 w-[83vw] text-justify text-sm text-gray-200 
+                <p className="mt-6 w-[83vw] text-center text-sm text-gray-200 
             lg:w-[39vw] lg:text-base ">
-                  A Logos Academy,
+                  Descubra como podemos atender aos desafios do seu negócio!
                  .</p>
 
 
@@ -222,13 +222,13 @@ const Page: React.FC = () => {
 
 
 
-          <div className="w-full  lg:flex lg:flex-col lg:items-center lg:p-0    ">
+          <div className=" w-full  lg:flex lg:mt-[5rem] lg:flex-col lg:items-center lg:p-0    ">
           <div className="md:w-8/12 lg:ms-6 
-   lg:w-5/12  pt-36 lg:pt-6">
+   lg:w-5/12  pt-36 lg:pt-10">
 
-  <div className='flex font-cooper-bold justify-center -mt-6 pr-3 pb-6
-  lg:pr-[15rem]'>
-  <h1 className='text-4xl text-white' >Sign Up</h1>
+  <div className='flex font-cooper-bold  justify-center -mt-6 pr-3 pb-6
+  lg:pr-0'>
+  <h1 className='text-4xl text-center text-orange-500' >Sign Up Enterprise</h1>
   </div>
     <form className='flex w-72 flex-col items-end gap-6' onSubmit={handleSubmit}>
       <div className="relative z-0 w-full mb-5 group">
@@ -236,7 +236,7 @@ const Page: React.FC = () => {
           type="text"
           className="block py-2.5 px-0 w-full text-sm text-gray-900
            bg-transparent border-0 border-b-2 border-gray-300 
-           appearance-none dark:text-white dark:border-gray-950
+           appearance-none dark:text-white dark:border-orange-500
             dark:focus:border-white focus:outline-none focus:ring-0
              focus:border-white peer" placeholder=" " required 
           id="name"
@@ -253,6 +253,28 @@ const Page: React.FC = () => {
           peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
            peer-focus:scale-75 peer-focus:-translate-y-6">Nome:</label>
       </div>
+      <div className="relative z-0 w-full mb-5 group">
+        <input
+          type="text"
+          className="block py-2.5 px-0 w-full text-sm text-gray-900
+           bg-transparent border-0 border-b-2 border-gray-300 
+           appearance-none dark:text-white dark:border-orange-500
+            dark:focus:border-white focus:outline-none focus:ring-0
+             focus:border-white peer" placeholder=" " required 
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+        {errors.name && <p>{errors.name}</p>}
+        <label htmlFor="name" className="peer-focus:font-medium 
+        absolute text-sm text-slate-50 dark:text-slate-100
+        duration-300 transform -translate-y-6 scale-75 top-3 -z-10
+         origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 
+         rtl:peer-focus:left-auto peer-focus:text-slate-50 peer-focus:dark:text-slate-200
+          peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+           peer-focus:scale-75 peer-focus:-translate-y-6">Nome da Empresa:</label>
+      </div>
 
       <div className="relative z-0 w-full mb-5 group">
         
@@ -260,7 +282,7 @@ const Page: React.FC = () => {
           type="text"
           className="block py-2.5 px-0 w-full text-sm text-gray-900
            bg-transparent border-0 border-b-2 border-gray-300 
-           appearance-none dark:text-white dark:border-gray-950
+           appearance-none dark:text-white dark:border-orange-500
             dark:focus:border-white focus:outline-none focus:ring-0
              focus:border-white peer" placeholder=" " required 
           id="fone"
@@ -284,7 +306,7 @@ const Page: React.FC = () => {
           type="email"
           className="block py-2.5 px-0 w-full text-sm text-gray-900
            bg-transparent border-0 border-b-2 border-gray-300 
-           appearance-none dark:text-white dark:border-gray-950
+           appearance-none dark:text-white dark:border-orange-500
             dark:focus:border-white focus:outline-none focus:ring-0
              focus:border-white peer" placeholder=" " required 
           id="email"
@@ -304,11 +326,11 @@ const Page: React.FC = () => {
 
       
 
-      <button className="text-orange-500 bg-slate-50
+      <button className="text-gray-950 bg-slate-50
        hover:bg-slate-600 focus:ring-4 focus:outline-none
         focus:ring-slate-300 font-medium 
         rounded-lg text-sm w-full sm:w-auto
-         px-5 py-2.5 text-center dark:bg-gray-950
+         px-5 py-2.5 text-center dark:bg-orange-500
           dark:hover:bg-slate-700 dark:focus:ring-slate-800" type="submit" disabled={loading}>
         {loading ? 'Enviando...' : 'Enviar'}
       </button>
