@@ -10,7 +10,7 @@ const Page = () => {
 
 <section className="bg-gray-950 pt-20">
 <div className="mx-auto w-full max-w-[120vw] md:w-[100vw] px-5">
-<div className="border border-transparent bg-gradient-to-b
+<div className="border border-transparent 
   overflow-hidden rounded">
 <div className="rounded flex flex-col gap-[3.75rem] p-6 lg:p-[3.75rem]">
 <div className="flex flex-col items-center gap-6">

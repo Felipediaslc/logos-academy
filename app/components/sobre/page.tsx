@@ -37,10 +37,10 @@ const Page = () => {
            mx-auto flex w-full max-w-[40vw] flex-col
             items-center justify-center px-5 ">
               <div className="mb-4 flex w-full flex-col items-center lg:mb-0">
-                <div className="group/tag w-fit border border-transparent bg-gradient-to-b
+                <div className="md:mb-1 group/tag w-fit border border-transparent bg-gradient-to-b
           from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
-                  <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9rounded">
-                    <span className="text-xs lg:text-sm whitespace-nowrap text-transparent
+                  <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9 rounded">
+                    <span className="text-xs lg:text-sm whitespace-nowrap text-transparent md:text-[1.5rem]
                 bg-clip-text bg-gradient-to-r from-white to-white font-medium font-mono">
                       Sobre a Logos Academy_
                     </span>
@@ -48,11 +48,11 @@ const Page = () => {
                 </div>
 
                 <h2 className="mt-6 w-[100vw] text-center text-2xl 
-            font-cooper-bold text-orange-400  md:w-[50vw] lg:w-[30vw]
+            font-cooper-bold text-orange-400  md:w-[70vw] lg:w-[30vw] md:text-4xl 
             lg:text-3xl">
                   Somos uma plataforma de aprendizado contínuo em programação.
                 </h2>
-                <p className="mt-6 w-[83vw] text-justify text-sm text-gray-200 
+                <p className="mt-6 w-[83vw] text-justify text-sm text-gray-200 md:text-2xl
             lg:w-[39vw] lg:text-base ">
                   A Logos Academy,
                   é uma escola de programação que transforma
@@ -76,7 +76,7 @@ const Page = () => {
 
 
 
-          <div className="w-full  lg:flex lg:flex-col lg:items-center lg:p-0    ">
+          <div className="w-full  lg:flex lg:flex-col lg:items-center lg:p-0   md:px-32  ">
             <Image alt="" loading="eager" width="500" height="500"
               decoding="async" data-nimg="1"
               className=" -mt-[1rem] lg:mt-[1.5rem] lg:-ml-3
@@ -88,16 +88,16 @@ const Page = () => {
 
 
 
-      <section className="relative py-0" >
+      <section className="relative py-0 md:-mt-24" >
 
         <div className=" py-32 relative mx-auto flex w-full lg:-mt-20 lg:py-28
          2xl:py-32  2xl:-mt-3 lg:w-[60vw] 2xl:w-[55vw] flex-col items-center justify-center px-5">
           <div className="mb-4 flex w-full flex-col items-center lg:mb-0">
-            <div className="group/tag w-fit border border-transparent bg-gradient-to-b
+            <div className=" md:mb-12 group/tag w-fit border border-transparent bg-gradient-to-b
           from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
                 <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9
                  rounded">
-                <span className="text-xs lg:text-sm whitespace-nowrap text-transparent
+                <span className="text-xs lg:text-sm whitespace-nowrap text-transparent md:text-[1.5rem] 
                  bg-clip-text bg-gradient-to-r from-white to-white font-medium font-mono">
                   Perguntas_
                 </span>
@@ -107,7 +107,7 @@ const Page = () => {
             <Accordion type="single" 
             collapsible className="
             w-full flex flex-col justifi-center
-             lg:pt-[2rem] lg:pl-[12rem]">
+             lg:pt-[2rem] lg:pl-[12rem] md:text-2xl md:w-[70vw]">
               <AccordionItem value="item-1">
                 <AccordionTrigger>O que vamos alcançar no curso?</AccordionTrigger>
                 <AccordionContent>
@@ -217,19 +217,19 @@ overflow-hidden rounded-[10px]">
                 </div>
                 <div className="space-y-4 lg:max-w-[524px]">
                   <div className="group/tag w-fit border border-transparent bg-gradient-to-b
-from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
+                from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
                     <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9 rounded">
                       <span className="text-xs lg:text-sm whitespace-nowrap text-transparent
- bg-clip-text bg-gradient-to-r from-white to-white font-medium font-mono">
+                      bg-clip-text bg-gradient-to-r from-white to-white font-medium font-mono md:text-[1.5rem] ">
                         <h2>
                           Instrutor_
                         </h2>
                       </span>
                     </div>
                   </div>
-                  <p className="text-2xl font-cooper-bold text-white lg:text-4xl">
+                  <p className="text-2xl md:text-3xl font-cooper-bold text-white lg:text-4xl">
                     Daniel Cavalcante de Souza</p>
-                  <p className="text-sm lg:text-base text-white text-justify ">
+                  <p className="text-sm md:text-2xl lg:text-base text-white text-justify ">
                     Líder Técnico | CEO e Professor na Logos Academy | Tech Lead | Node.JS | ReactJS | React Native.
                     Apaixonado por codar, aprender novas ferramentas e tecnologias
                     e estar sempre à frente do que há de mais atual no mercado de
@@ -242,7 +242,7 @@ from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
                       <path d="M25 17.2148L18.75 23.4648L15 19.7148" stroke="#FF7900" stroke-linecap="square"
                         stroke-linejoin="round" stroke-width="2"></path>
                     </svg>
-                    <p className="text-sm text-gray-100 lg:text-base">
+                    <p className="text-sm md:text-2xl text-gray-100 lg:text-base">
                       13 anos de experiência na área de programação
                     </p>
                   </div>
@@ -253,7 +253,7 @@ from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
                       <path d="M25 17.2148L18.75 23.4648L15 19.7148" stroke="#FF7900" stroke-linecap="square"
                         stroke-linejoin="round" stroke-width="2"></path>
                     </svg>
-                    <p className="text-sm text-gray-100 lg:text-base">
+                    <p className="text-sm md:text-2xl text-gray-100 lg:text-base">
                       Fundador e CEO da Logos Academy
                     </p>
                   </div>
@@ -273,9 +273,9 @@ from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
             overflow-hidden rounded-[10px]">
             <div className="rounded-[10px] flex flex-col gap-10 bg-transparent p-6 lg:p-[3.75rem]">
               <div className="flex flex-col gap-10 lg:flex-row lg:items-center">
-                <div className="max-lg:w-full">
+                <div className=" max-lg:w-full">
                   <Image alt="" loading="lazy" width="532" height="466.13" decoding="async" data-nimg="1"
-                    className="rounded-full max-lg:w-full lg:h-[85vh] color: transparent;"
+                    className="rounded-full max-lg:w-full lg:h-[85vh] md:h-[55vh]   color: transparent;"
 
                     src={InstrutorGreg} />
                 </div>
@@ -283,18 +283,18 @@ from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
                   <div className="group/tag w-fit border border-transparent bg-gradient-to-b
                  from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
                     <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9 rounded">
-                      <span className="text-xs lg:text-sm whitespace-nowrap text-transparent
- bg-clip-text bg-gradient-to-r from-white to-white font-medium font-mono">
+                      <span className="text-xs lg:text-sm whitespace-nowrap text-transparent md:text-2xl
+                         bg-clip-text bg-gradient-to-r from-white to-white font-medium font-mono">
                         <h2>
                           Instrutor_
                         </h2>
                       </span>
                     </div>
                   </div>
-                  <p className="text-2xl font-cooper-bold text-white lg:text-4xl">
+                  <p className="text-2xl md:text-3xl font-cooper-bold text-white lg:text-4xl">
                     Gregorio Arlindo Pinheiro Jr
                   </p>
-                  <p className="text-sm lg:text-base text-white text-justify">
+                  <p className="text-sm md:text-2xl lg:text-base text-white text-justify">
                     Desenvolvedor Full Stack | NodeJS | React.
                     Sou apaixonado por programação, sempre buscando aprender novas ferramentas
                     e tecnologias para me manter atualizado com as tendências do mercado.
@@ -307,7 +307,7 @@ from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
                       <path d="M25 17.2148L18.75 23.4648L15 19.7148" stroke="#FF7900" stroke-linecap="square"
                         stroke-linejoin="round" stroke-width="2"></path>
                     </svg>
-                    <p className="text-sm text-gray-100 lg:text-base">
+                    <p className="text-sm md:text-2xl text-gray-100 lg:text-base">
                       +11 anos de experiência na área de programação
                     </p>
                   </div>
@@ -318,7 +318,7 @@ from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
                       <path d="M25 17.2148L18.75 23.4648L15 19.7148" stroke="#FF7900" stroke-linecap="square"
                         stroke-linejoin="round" stroke-width="2"></path>
                     </svg>
-                    <p className="text-sm text-gray-100 lg:text-base">
+                    <p className="text-sm md:text-2xl text-gray-100 lg:text-base">
                     Instrutor
                     </p>
                   </div>

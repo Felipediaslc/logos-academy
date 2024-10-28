@@ -84,7 +84,7 @@ const Page: React.FC = () => {
   };
   return (
     <>
-      <section className="w-full h-[140vh] bg-gray-950 pb-20 pt-10">
+      <section className="w-full h-[140vh] md:h-[110vh] bg-gray-950 pb-20 pt-10">
         <div className="mx-auto lg:mt-6 flex w-full 
         max-w-[78.5rem] flex-col gap-6 px-5
          lg:flex-row lg:justify-between">

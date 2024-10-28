@@ -22,7 +22,7 @@ const Page = () => {
     <>
  
     <section   className="-mt-[5rem]   h-screem bg-gray-950
-      md:px-0 md:py-0  md:w-full md:h-[250vh] 
+      md:px-0 md:py-0  md:w-full md:h-[230vh] 
        md:bg-gray-950  lg:bg-gray-950 
         lg:h-[335vh]  xl:w-full 
         xl:bg-gray-950 xl:h-[235vh]
@@ -30,7 +30,7 @@ const Page = () => {
          xl:justify-center
       2xl:h-[140vh]" > 
       <div
-        className=" py-44 lg:py-0 flex flex-col md:mt-[5rem] md:mb-[5rem]
+        className=" py-44 lg:py-0 flex flex-col md:-mt-[2rem] md:mb-[12rem]
        lg:mt-[5rem] lg:mb-[5rem]
        xl:mt-[6.1rem] z-0 items-center gap-4"
       >
@@ -93,7 +93,7 @@ const Page = () => {
 
             <div
               className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] 
-              md:h-[15vh]  xl:h-[63vh] lg:h-[61vh]
+              md:h-[35vh]  xl:h-[63vh] lg:h-[61vh]
              lg:w-[calc(50%-3rem)] 
              bg-transparent border border-1 border-yellow-800 p-4 rounded "
             >
@@ -142,7 +142,7 @@ const Page = () => {
            w-10 h-10 rounded-full border-none
          bg-slate-300 group-[.is-active]:bg-orange-500
          text-slate-500 group-[.is-active]:text-gray-950
-           shadow shrink-0 md:order-1 md:ml-[1px] xl:ml-0
+           shadow shrink-0 md:order-1 md:ml-[2.1rem] xl:ml-0
            md:group-odd:-translate-x-1/2
            md:group-even:translate-x-1/2"
             >
@@ -160,7 +160,7 @@ const Page = () => {
             </div>
 
             <div
-              className="w-[calc(100%-5rem)] md:w-[calc(100%-15rem)] md:h-[15vh]
+              className="w-[calc(100%-5rem)] md:w-[calc(100%-12rem)] md:h-[27vh]
               lg:w-[calc(50%-2.5rem)]
               xl:h-[40vh] lg:h-[40vh]
             bg-transparent border border-1 border-yellow-800 p-4 rounded "
@@ -192,7 +192,7 @@ const Page = () => {
           <div
             className="relative  flex items-center 
             lg:justify-normal lg:p-0 xl:justify-normal xl:p-0
-            justify-between  md:justify-start  md:pr-[1rem] md:h-[10rem]
+            justify-between  md:justify-start  md:pr-[1rem] md:h-[13rem]
             sm:justify-start sm:pr-[15rem]
             md:odd:flex-row-reverse group 
             is-active"
@@ -217,7 +217,7 @@ const Page = () => {
             </div>
 
             <div
-              className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh] 
+              className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[22vh] 
                lg:w-[calc(50%-2.5rem)]
               xl:h-[40vh] lg:h-[40vh]
              bg-transparent border border-1 border-yellow-800 p-3 rounded "
@@ -254,7 +254,7 @@ const Page = () => {
               className="flex items-center justify-center
                w-10 h-10 rounded-full border-none
               group-[.is-active]:bg-orange-500  
-                group-[.is-active]:text-gray-950
+              md:ml-[2.1rem]  group-[.is-active]:text-gray-950
                shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
             >
               <svg
@@ -271,8 +271,8 @@ const Page = () => {
             </div>
 
             <div
-              className="w-[calc(100%-5rem)] md:w-[calc(100%-15rem)]
-               md:h-[15vh]
+              className="w-[calc(100%-5rem)] md:w-[calc(100%-12rem)]
+               md:h-[17vh]
              lg:w-[calc(50%-2.5rem)]
              xl:h-[40vh] lg:h-[40vh]
              bg-transparent border border-1 border-yellow-800 p-4 rounded"
@@ -322,7 +322,7 @@ const Page = () => {
 
             <div
               className="w-[calc(100%-5rem)]
-               md:w-[calc(50%-3rem)] md:h-[15vh]
+               md:w-[calc(50%-3rem)] md:h-[19vh]
              lg:w-[calc(50%-2.5rem)]
                xl:h-[40vh] lg:h-[40vh]
            bg-transparent border border-1 border-yellow-800  p-4 rounded  shadow"
@@ -390,7 +390,7 @@ const Page = () => {
             </div>
 
             <div
-              className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]
+              className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[17vh]
              lg:w-[calc(50%-2.5rem)]
            xl:h-[40vh] lg:h-[40vh]
            bg-transparent border border-1 border-yellow-800 p-4 rounded " >
@@ -427,7 +427,7 @@ const Page = () => {
             bg-slate-300 group-[.is-active]:bg-orange-500
              text-slate-500 group-[.is-active]:text-gray-950
               shadow shrink-0
-              md:ml-[0rem] md:order-1 md:group-odd:-translate-x-1/2
+              md:ml-[2.2rem] md:order-1 md:group-odd:-translate-x-1/2
                md:group-even:translate-x-1/2
               xl:ml-0"
             >
@@ -445,7 +445,7 @@ const Page = () => {
             </div>
 
             <div
-              className="w-[calc(100%-5rem)] md:w-[calc(100%-16rem)] md:h-[15vh]
+              className="w-[calc(100%-5rem)] md:w-[calc(100%-16rem)] md:h-[25vh]
               lg:w-[calc(50%-2.5rem)]
             xl:h-[45vh] lg:h-[45vh]
             bg-transparent border border-1 border-yellow-800 p-4 rounded "
@@ -497,7 +497,7 @@ const Page = () => {
             </div>
 
             <div
-              className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[15vh]
+              className="w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] md:h-[18vh]
              lg:w-[calc(50%-2.5rem)]
              xl:h-[40vh] lg:h-[40vh]
              bg-transparent border border-1 border-yellow-800 p-4 rounded "
@@ -534,7 +534,7 @@ const Page = () => {
             bg-slate-300 group-[.is-active]:bg-orange-500
              text-slate-500 group-[.is-active]:text-gray-950
               shadow shrink-0
-             md:ml-[0rem] md:order-1 md:group-odd:-translate-x-1/2
+             md:ml-[2.4rem] md:order-1 md:group-odd:-translate-x-1/2
               md:group-even:translate-x-1/2
               xl:ml-0"
             >
@@ -552,7 +552,7 @@ const Page = () => {
             </div>
 
             <div
-              className="w-[calc(100%-5rem)] md:w-[calc(100%-16rem)] md:h-[15vh]
+              className="w-[calc(100%-5rem)] md:w-[calc(100%-17rem)] md:h-[17vh] md:ml-3
              lg:w-[calc(50%-2.5rem)]
             xl:h-[40vh] lg:h-[40vh]
              bg-transparent border border-1 border-yellow-800 p-4 rounded "
