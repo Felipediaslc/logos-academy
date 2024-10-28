@@ -11,6 +11,7 @@ import Home from "../../../public/empresa.png";
 interface RegisterFormData {
 
   name: string;
+  nameEmpresa: string;
   fone: string;
   email: string;
 
@@ -20,6 +21,7 @@ interface RegisterFormData {
 const initialState: RegisterFormData = {
 
   name: '',
+  nameEmpresa:'',
   fone: '',
   email: ''
 };
@@ -70,7 +72,7 @@ const Page: React.FC = () => {
     setLoading(true);
 
     try {
-      await axios.post('http://localhost:3001/users', formData);
+      await axios.post('http://localhost:3001/empresas', formData);
       alert('Cadastro realizado com sucesso!');
       setFormData(initialState); // Resetar o formulário após sucesso
     } catch (error) {
@@ -83,8 +85,10 @@ const Page: React.FC = () => {
   return (
     <>
       <section className="w-full h-[140vh] bg-gray-950 pb-20 pt-10">
-        <div className="mx-auto flex w-full max-w-[78.5rem] flex-col gap-6 px-5 lg:flex-row lg:justify-between">
-          <div className=" lg:pt-20 flex w-full flex-col items-center justify-center gap-6 text-center lg:items-start 
+        <div className="mx-auto lg:mt-6 flex w-full 
+        max-w-[78.5rem] flex-col gap-6 px-5
+         lg:flex-row lg:justify-between">
+          <div className=" md:h-[45vh] lg:pt-24 flex w-full flex-col items-center justify-center gap-6 text-center lg:items-start 
         lg:text-start"><div className="flex items-end gap-2 whitespace-nowrap text-start">
               <Image alt="Rocketseat" loading="lazy"
                 width="150"
@@ -92,24 +96,26 @@ const Page: React.FC = () => {
                 decoding="async" data-nimg="1"
                 className="h-15 w-30  color:transparent"
                 src={logo} />
-              <strong className="font-medium text-white lg:text-xl">Para Empresas</strong>
-            </div><div className="space-y-4 lg:space-y-6">
-              <h3 className="max-w-[475px] text-3xl font-cooper-bold text-orange-500
 
+              <strong className="font-medium text-white lg:text-xl">Para Empresas</strong>
+            </div><div className="space-y-4  lg:space-y-6">
+              <h3 className="max-w-[575px] text-3xl
+               font-cooper-bold text-orange-500
+                  md:w-[85vw]  md:space-y-12 md:ml-[6rem] lg:ml-0 md:text-4xl
                      lg:text-5xl">Capacite seu time de tecnologia e leve sua empresa para o próximo nível</h3>
-              <p className="text-white lg:text-lg">Agora você RH ou Tech Lead gerencia o aprendizado
+              <p className="text-white lg:text-lg  md:text-[1.4rem]">Agora você RH ou Tech Lead gerencia o aprendizado
                 e acessos de forma simples e fácil, enquanto seu time se desenvolve com conteúdos práticos
-                e atualizados em nossa plataforma.</p>
+                e atualizados em nossa plataforma.</p> 
               <a className="group flex w-full items-center justify-center
                          gap-2 rounded-[0.625rem] px-6 text-sm font-bold uppercase leading-[16.41px]
                           text-gary-950 transition-colors disabled:cursor-not-allowed disabled:opacity-75
-                           md:w-fit max-h-[3.25rem] py-[1.125rem] bg-orange-500 hover:bg-rocketseat-low 
+                           md:w-fit md:ml-[15rem] lg:ml-0 max-h-[3.25rem] py-[1.125rem] bg-orange-500 hover:bg-rocketseat-low 
                            " href="#subscription">FALE COM UM ESPECIALISTA
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5">
                   <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                </svg></a></div></div><div className="w-full lg:pt-20 ">
+                </svg></a></div></div><div className="w-full lg:pt-16 ">
             <Image alt="" loading="eager" width="1303" height="1332"
               decoding="async" data-nimg="1" className="color:transparen rounded-full"
               src={Home} />
@@ -180,36 +186,37 @@ const Page: React.FC = () => {
       </section>
 
 
-      <section className="w-full h-[100vh] bg-gray-950 pb-20 pt-10">
+      <section className="w-full h-[130vh] md:h-[100vh] lg:h-[110vh]  bg-gray-950 pb-20 pt-10">
         <div className="mx-auto 
-        flex w-[100vw]  -mt-[2.5rem]
-         flex-col gap-3 px-5 
-         lg:flex-row lg:justify-between lg:-mt-[5rem] lg:w-[100vw]
+        flex w-[100vw]  mt-[3rem]
+         flex-col gap-3 p-[3.5rem]
+         lg:flex-row lg:justify-between  lg:mt-[1rem] lg:w-[100vw]
          2xl:-mt-[15rem]">
           <div className="  
-           lg:-ml-7  lg:pt-20 flex w-full
+           lg:-ml-7  lg:pt-3 flex w-full -mb-28
             flex-col items-center justify-center gap-6 text-center 
-        lg:text-center lg:mt-[5rem]">
-            <div className="relative  lg:-mt-[8.5rem] 
+        lg:text-center lg:mt-0  lg:h-[40vh]">
+            <div className="relative  lg:-mt-[10rem] 
            mx-auto flex w-full max-w-[40vw] flex-col
             items-center justify-center px-5 ">
               <div className="mb-4 flex w-full flex-col items-center lg:mb-0">
                 <div className="group/tag w-fit border border-transparent bg-gradient-to-b
           from-orange-600 to-orange-600 bg-origin-border overflow-hidden rounded">
-                  <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9rounded">
-                    <span className="text-xs lg:text-sm whitespace-nowrap text-transparent
+                  <div className="flex items-center bg-gray-950 w-fit p-2 max-h-8 lg:px-4 lg:h-9 rounded">
+                    <span className="text-xs md:text-[1.5rem] lg:text-sm whitespace-nowrap text-transparent
                 bg-clip-text bg-gradient-to-r from-white to-white font-medium font-mono">
                       FALE CONOSCO_
                     </span>
                   </div>
                 </div>
 
-                <h2 className="mt-6 w-[100vw] text-center text-2xl 
-            font-cooper-bold text-orange-400  md:w-[50vw] lg:w-[30vw]
+                <h2 className="mt-6 w-[80vw]  text-center text-2xl 
+            font-cooper-bold text-orange-500  md:w-[65vw] md:text-4xl
+             lg:w-[30vw]
             lg:text-3xl">
                   Empresas já embarcaram com a gente.
                 </h2>
-                <p className="mt-6 w-[83vw] text-center text-sm text-gray-200 
+                <p className="mt-6 w-[70vw]  md:w-[50vw] md:text-[1.4rem] text-center text-sm text-gray-200 
             lg:w-[39vw] lg:text-base ">
                   Descubra como podemos atender aos desafios do seu negócio!
                  .</p>
@@ -222,20 +229,22 @@ const Page: React.FC = () => {
 
 
 
-          <div className=" w-full  lg:flex lg:mt-[5rem] lg:flex-col lg:items-center lg:p-0    ">
-          <div className="md:w-8/12 lg:ms-6 
-   lg:w-5/12  pt-36 lg:pt-10">
+          <div className=" w-full lg:-mt-[2.8rem]  lg:pr-[5rem]  lg:flex lg:w-[40vw]
+           lg:flex-col lg:items-center lg:p-0 lg:h-[86vh]    ">
+          <div className="md:w-8/12    md:m-28 md:pt-[3rem] 
+          lg:ml-[4rem] lg:mt-[1rem]  lg:w-11/12  pt-36 lg:pt-3">
 
-  <div className='flex font-cooper-bold  justify-center -mt-6 pr-3 pb-6
-  lg:pr-0'>
+  <div className='flex font-cooper-bold md:w-[30vw]  md:pl-[14rem]
+   justify-center -mt-6 pr-3 pb-6
+  lg:pl-0  lg:w-[20vw] lg:ml-[8rem]'>
   <h1 className='text-4xl text-center text-orange-500' >Sign Up Enterprise</h1>
   </div>
-    <form className='flex w-72 flex-col items-end gap-6' onSubmit={handleSubmit}>
+    <form className='flex w-72 lg:w-80 lg:ml-[6rem] flex-col items-end gap-6' onSubmit={handleSubmit}>
       <div className="relative z-0 w-full mb-5 group">
         <input
           type="text"
           className="block py-2.5 px-0 w-full text-sm text-gray-900
-           bg-transparent border-0 border-b-2 border-gray-300 
+           bg-transparent border-0 border-b-2 md:w-[28.5rem] lg:w-80 border-gray-300 
            appearance-none dark:text-white dark:border-orange-500
             dark:focus:border-white focus:outline-none focus:ring-0
              focus:border-white peer" placeholder=" " required 
@@ -251,29 +260,31 @@ const Page: React.FC = () => {
          origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 
          rtl:peer-focus:left-auto peer-focus:text-slate-50 peer-focus:dark:text-slate-200
           peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
-           peer-focus:scale-75 peer-focus:-translate-y-6">Nome:</label>
+           peer-focus:scale-75 peer-focus:-translate-y-6
+            md:text-[1.5rem] lg:text-sm">Nome:</label>
       </div>
       <div className="relative z-0 w-full mb-5 group">
         <input
           type="text"
           className="block py-2.5 px-0 w-full text-sm text-gray-900
-           bg-transparent border-0 border-b-2 border-gray-300 
+           bg-transparent border-0 border-b-2 md:w-[28.5rem] lg:w-80 border-gray-300 
            appearance-none dark:text-white dark:border-orange-500
             dark:focus:border-white focus:outline-none focus:ring-0
              focus:border-white peer" placeholder=" " required 
-          id="name"
-          name="name"
-          value={formData.name}
+          id="nameEmpresa"
+          name="nameEmpresa"
+          value={formData.nameEmpresa}
           onChange={handleChange}
         />
-        {errors.name && <p>{errors.name}</p>}
+        {errors.nameEmpresa && <p>{errors.nameEmpresa}</p>}
         <label htmlFor="name" className="peer-focus:font-medium 
         absolute text-sm text-slate-50 dark:text-slate-100
         duration-300 transform -translate-y-6 scale-75 top-3 -z-10
          origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 
          rtl:peer-focus:left-auto peer-focus:text-slate-50 peer-focus:dark:text-slate-200
           peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
-           peer-focus:scale-75 peer-focus:-translate-y-6">Nome da Empresa:</label>
+           peer-focus:scale-75 peer-focus:-translate-y-6
+           md:text-[1.5rem] lg:text-sm">Nome da Empresa:</label>
       </div>
 
       <div className="relative z-0 w-full mb-5 group">
@@ -281,7 +292,7 @@ const Page: React.FC = () => {
         <input
           type="text"
           className="block py-2.5 px-0 w-full text-sm text-gray-900
-           bg-transparent border-0 border-b-2 border-gray-300 
+           bg-transparent border-0 border-b-2 md:w-[28.5rem] lg:w-80 border-gray-300 
            appearance-none dark:text-white dark:border-orange-500
             dark:focus:border-white focus:outline-none focus:ring-0
              focus:border-white peer" placeholder=" " required 
@@ -297,7 +308,8 @@ const Page: React.FC = () => {
          origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 
          rtl:peer-focus:left-auto peer-focus:text-slate-50 peer-focus:dark:text-slate-200
           peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
-           peer-focus:scale-75 peer-focus:-translate-y-6">Telefone:</label>
+           peer-focus:scale-75 peer-focus:-translate-y-6
+           md:text-[1.5rem] lg:text-sm">Telefone:</label>
       </div>
 
       <div className="relative z-0 w-full mb-5 group">
@@ -305,7 +317,7 @@ const Page: React.FC = () => {
         <input
           type="email"
           className="block py-2.5 px-0 w-full text-sm text-gray-900
-           bg-transparent border-0 border-b-2 border-gray-300 
+           bg-transparent border-0 border-b-2 md:w-[28.5rem] lg:w-80 border-gray-300 
            appearance-none dark:text-white dark:border-orange-500
             dark:focus:border-white focus:outline-none focus:ring-0
              focus:border-white peer" placeholder=" " required 
@@ -321,15 +333,17 @@ const Page: React.FC = () => {
          origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 
          rtl:peer-focus:left-auto peer-focus:text-slate-50 peer-focus:dark:text-slate-200
           peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
-           peer-focus:scale-75 peer-focus:-translate-y-6">Email:</label>
+           peer-focus:scale-75 peer-focus:-translate-y-6
+           md:text-[1.5rem] lg:text-sm">Email:</label>
       </div>
 
       
 
       <button className="text-gray-950 bg-slate-50
        hover:bg-slate-600 focus:ring-4 focus:outline-none
-        focus:ring-slate-300 font-medium 
-        rounded-lg text-sm w-full sm:w-auto
+        focus:ring-slate-300 font-medium md:text-[1.5rem]
+        rounded-lg text-sm w-full sm:w-auto md:w-[28.5rem] lg:w-80
+         md:-mr-[10.5rem] lg:text-sm lg:mr-0
          px-5 py-2.5 text-center dark:bg-orange-500
           dark:hover:bg-slate-700 dark:focus:ring-slate-800" type="submit" disabled={loading}>
         {loading ? 'Enviando...' : 'Enviar'}
