@@ -107,7 +107,7 @@ const Page = () => {
             <Accordion type="single" 
             collapsible className="
             w-full flex flex-col justifi-center
-             lg:pt-[2rem] lg:pl-[12rem] md:text-2xl md:w-[70vw]">
+             lg:pt-[2rem] lg:-ml-[10rem] md:text-2xl md:w-[70vw] lg:w-full lg:text-2xl ">
               <AccordionItem value="item-1">
                 <AccordionTrigger>O que vamos alcançar no curso?</AccordionTrigger>
                 <AccordionContent>
@@ -210,8 +210,8 @@ overflow-hidden rounded-[10px]">
             <div className="rounded-[10px] flex flex-col gap-10 bg-transparent p-6 lg:p-[3.75rem]">
               <div className="flex flex-col gap-10 lg:flex-row lg:items-center">
                 <div className="max-lg:w-full">
-                  <Image alt="" loading="lazy" width="532" height="466.13" decoding="async" data-nimg="1"
-                    className="rounded-full max-lg:w-full color: transparent;"
+                  <Image alt="" loading="lazy" width="532" height="400" decoding="async" data-nimg="1"
+                    className="rounded-full max-lg:w-full md:h-[45vh] md:ml-[6rem] md:w-[68vw] lg:h-[70vh] lg:w-[30vw]  lg:ml-[1rem] color: transparent;"
 
                     src={Instrutor} />
                 </div>
@@ -274,8 +274,8 @@ overflow-hidden rounded-[10px]">
             <div className="rounded-[10px] flex flex-col gap-10 bg-transparent p-6 lg:p-[3.75rem]">
               <div className="flex flex-col gap-10 lg:flex-row lg:items-center">
                 <div className=" max-lg:w-full">
-                  <Image alt="" loading="lazy" width="532" height="466.13" decoding="async" data-nimg="1"
-                    className="rounded-full max-lg:w-full lg:h-[85vh] md:h-[55vh]   color: transparent;"
+                  <Image alt="" loading="lazy" width="532" height="400" decoding="async" data-nimg="1"
+                    className="rounded-full max-lg:w-full h-[40vh]  lg:h-[70vh] lg:w-[30vw]  lg:ml-[1rem]  md:h-[45vh] md:ml-[6rem] md:w-[68vw]   color: transparent;"
 
                     src={InstrutorGreg} />
                 </div>

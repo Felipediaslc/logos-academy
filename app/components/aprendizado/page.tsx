@@ -9,7 +9,7 @@ const Page = () => {
     return (
 
 <section className="bg-gray-950 pt-20">
-<div className="mx-auto w-full max-w-[120vw] md:w-[100vw] px-5">
+<div className="mx-auto w-full md:h-[115vh] max-w-[120vw] md:w-[100vw] px-5">
 <div className="border border-transparent 
   overflow-hidden rounded">
 <div className="rounded flex flex-col gap-[3.75rem] p-6 lg:p-[3.75rem]">
@@ -21,7 +21,7 @@ const Page = () => {
  bg-gradient-to-r from-white to-white font-medium font-mono">Para quem é?_</span>
 </div></div><h2 className="text-center text-2xl font-cooper-bold text-orange-500 
 lg:text-4xl">Independente do seu nível a Logos Academy é para você</h2></div>
-<div className="flex flex-col justify-between gap-8 lg:flex-row">
+<div className="flex -mt-6 flex-col justify-between gap-8 lg:flex-row">
 <div className="lg:max-w-[25.875rem]">
 <div className="mt-6 w-full flex-1 border-b border-orange-500 pb-6 last:border-none">
 <span className="text-xl font-cooper-bold text-white lg:text-2xl">Para aprender do zero</span>
