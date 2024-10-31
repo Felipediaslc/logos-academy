@@ -12,7 +12,7 @@ const Header = () => {
 
    
     const Links = [
-        { name: "Cursos", link: "/components/cursos" },
+        { name: "Cursos", link: "#curso" },
         { name: "Sobre", link: "/components/sobre" },
         { 
             name: "Para empresas", 

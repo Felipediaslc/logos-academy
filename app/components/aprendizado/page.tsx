@@ -12,7 +12,7 @@ const Page = () => {
 <div className="mx-auto w-full md:h-[115vh] max-w-[120vw] md:w-[100vw] lg:h-[150vh] px-5">
 <div className="border border-transparent 
   overflow-hidden rounded">
-<div className="rounded flex flex-col gap-[3.75rem] p-6 lg:p-[3.75rem]">
+<div  className="rounded flex flex-col  gap-[3.75rem] p-6 lg:p-[3.75rem]">
 <div className="flex flex-col items-center gap-6">
   <div className="group/tag w-fit border border-transparent bg-gradient-to-r from-orange-600 to-orange-600
   bg-origin-border overflow-hidden rounded">
