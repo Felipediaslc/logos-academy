@@ -1196,7 +1196,7 @@ overflow-hidden "
                     height="400"
                     decoding="async"
                     data-nImage="1"
-                    className="rounded-[50px] max-lg:w-full md:h-[45vh] md:ml-[6rem] md:w-[68vw] lg:h-[70vh] lg:w-[50vw]  lg:ml-[1rem] color: transparent;"
+                    className="rounded-[10px] max-lg:w-full md:h-[45vh] md:ml-[6rem] md:w-[68vw] lg:h-[70vh] lg:w-[50vw]  lg:ml-[1rem] color: transparent;"
                     src={ImagemUp}
                   />
                 </div>

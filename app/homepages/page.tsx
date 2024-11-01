@@ -1,6 +1,7 @@
 import Home from "../components/home/page";
 import Cursos from "../components/cursos/page";
 import Aprendizado from "../components/aprendizado/page";
+import Footer from "../components/footer/page"
 
 
 
@@ -22,6 +23,7 @@ export default function HomePages() {
        <Home/>
        <Cursos />
        <Aprendizado />
+       <Footer />
       
      
       
