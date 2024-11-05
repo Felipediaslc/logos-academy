@@ -20,7 +20,7 @@ import GitHub from "../../../public/github.png";
 
 const HomePage: React.FC = () => {
   return (
-    <section className="h-[110vh] md:-mt-3 xl:-mt-3 bg-orange-500 md:h-[105vh] md:w-[100vw]
+    <section id="home" className="h-[110vh] md:-mt-3 xl:-mt-3 bg-orange-500 md:h-[105vh] md:w-[100vw]
       xl:h-[110vh]  w-screen  flex items-center justify-center bg-cover bg-center
       xl:w-screen
       2xl:-mt-3 2xl:w-screen">

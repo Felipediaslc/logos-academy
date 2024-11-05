@@ -21,7 +21,7 @@ const Page = () => {
   return (
 
 
-    <div className="bg-gray-950 pt-28">
+    <div id="sobre" className="bg-gray-950 pt-28">
 
       <section className="w-full h-[100vh] bg-gray-950 pb-20 pt-10">
         <div className="mx-auto 

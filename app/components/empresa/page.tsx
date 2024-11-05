@@ -5,6 +5,7 @@ import Joi from 'joi';
 import Image from "next/image";
 import logo from "../../../public/logos-todo.png";
 import Home from "../../../public/empresa.png";
+import Footer from "../footer/page"
 
 
 // Definição da interface do formulário
@@ -353,6 +354,8 @@ const Page: React.FC = () => {
    
           </div>
         </div></section>
+
+    <Footer />
     </>
   );
 };
