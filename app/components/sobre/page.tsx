@@ -122,12 +122,24 @@ const Page = () => {
       mx-auto
       flex
       w-full
-      max-w-4xl
       flex-col
       items-center
       justify-center
-      px-5
+
+      /* LARGURA RESPONSIVA */
+      max-w-[95%]
+      sm:max-w-3xl
+      md:max-w-4xl
       lg:max-w-5xl
+      xl:max-w-6xl
+      2xl:max-w-7xl
+
+      /* RESPIRO LATERAL */
+      px-4
+      sm:px-6
+      md:px-8
+      lg:px-10
+      xl:px-12
     "
   >
     {/* TAG */}
@@ -146,6 +158,7 @@ const Page = () => {
       className="
         flex
         w-full
+        max-w-full
         flex-col
         justify-center
         gap-4
@@ -156,13 +169,13 @@ const Page = () => {
       "
     >
       {/* ITEM 1 */}
-      <AccordionItem value="item-1 ">
+      <AccordionItem value="item-1">
         <AccordionTrigger>
           O que vamos alcançar no curso?
         </AccordionTrigger>
 
         <AccordionContent>
-          <ul className="space-y-3 text-justify list-none font-jakarta-regular  ">
+          <ul className="space-y-3 text-justify list-none font-jakarta-regular">
             <li>- Desenvolver um site full stack.</li>
             <li>- Identificar e resolver problemas.</li>
             <li>- Trabalhar em equipe.</li>
@@ -179,14 +192,13 @@ const Page = () => {
         </AccordionTrigger>
 
         <AccordionContent>
-          <div className="space-y-6  ">
+          <div className="space-y-6">
 
-            {/* BLOCO */}
-            <div className="border-b border-orange-500 pb-0.5  ">
-              <span className="font-cooper-bold tracking-widest text-orange-500  ">
+            <div className="border-b border-orange-500 pb-0.5">
+              <span className="font-cooper-bold tracking-widest text-orange-500">
                 Introdução ao curso
               </span>
-              <p className="mt-2 text-white  mb-0.5 font-jakarta-regular">
+              <p className="mt-2 text-white mb-0.5 font-jakarta-regular">
                 Conheceremos terminal, VS Code e ferramentas do curso.
               </p>
             </div>
@@ -213,7 +225,7 @@ const Page = () => {
               <span className="font-cooper-bold tracking-widest text-orange-500">
                 React
               </span>
-              <p className="mt-2 text-white mb-0.5 font-jakarta-regular ">
+              <p className="mt-2 text-white mb-0.5 font-jakarta-regular">
                 Componentes, ciclo de vida e integração full stack.
               </p>
             </div>
@@ -227,14 +239,33 @@ const Page = () => {
 
 
 
-
 /*  * /
 
 
 
       <section className="bg-transparent py-16">
 
-  <div className="mx-auto w-full max-w-6xl px-5">
+   <div
+    className="
+      mx-auto
+      w-full
+
+      /* RESPONSIVO ATÉ 1920 */
+      max-w-[95%]
+      sm:max-w-3xl
+      md:max-w-4xl
+      lg:max-w-5xl
+      xl:max-w-6xl
+      2xl:max-w-7xl
+
+      /* RESPIRO LATERAL */
+      px-4
+      sm:px-6
+      md:px-8
+      lg:px-10
+      xl:px-12
+    "
+  >
 
     <div className="overflow-hidden rounded-xl border border-transparent bg-origin-border">
 
@@ -251,9 +282,10 @@ const Page = () => {
               w-56
               sm:w-72
               md:w-80
-              lg:w-105
+              lg:w-[420px]   /* mantém visual desktop */
               h-auto
               object-cover
+              max-w-full     /* evita corte mobile */
             "
             priority
           />
@@ -263,7 +295,6 @@ const Page = () => {
         {/* TEXTO */}
         <div className="w-full space-y-6 lg:w-1/2">
 
-          {/* TAG */}
           <div className="w-fit overflow-hidden rounded border border-orange-600 bg-gradient-to-b from-orange-600 to-orange-600">
             <div className="flex items-center rounded bg-gray-950 px-4 py-0.5">
               <h2 className="my-1 bg-gradient-to-r from-white to-white bg-clip-text font-mono text-xs font-medium text-transparent sm:text-sm md:text-base">
@@ -272,24 +303,20 @@ const Page = () => {
             </div>
           </div>
 
-          {/* NOME */}
           <p className="text-2xl font-cooper-bold text-orange-500 sm:text-3xl lg:text-4xl">
             Daniel Cavalcante de Souza
           </p>
 
-          {/* BIO */}
           <p className="text-sm text-justify text-white sm:text-base md:text-lg lg:text-base font-jakarta-regular">
             Líder Técnico | CEO e Professor na Logos Academy | Tech Lead |
             Node.js | ReactJS | React Native. Apaixonado por codar,
             aprender novas tecnologias e impulsionar devs para o próximo nível.
           </p>
 
-          {/* LISTA */}
           <div className="space-y-4 pt-4">
 
-            {/* ITEM */}
             <div className="flex items-center gap-4 border-t border-gray-700 pt-4">
-
+              {/* SVG */}
               <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
                 <circle cx="20" cy="20.2148" r="15.5" />
                 <circle cx="20" cy="20.2148" r="12" className="fill-gray-950" />
@@ -300,15 +327,12 @@ const Page = () => {
                 />
               </svg>
 
-              <p className="text-sm text-gray-100 sm:text-base font-jakarta-regular ">
+              <p className="text-sm text-gray-100 sm:text-base font-jakarta-regular">
                 13 anos de experiência na área de programação
               </p>
-
             </div>
 
-            {/* ITEM */}
             <div className="flex items-center gap-4 border-t border-gray-700 pt-4">
-
               <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
                 <circle cx="20" cy="20.2148" r="15.5" />
                 <circle cx="20" cy="20.2148" r="12" className="fill-gray-950" />
@@ -322,7 +346,6 @@ const Page = () => {
               <p className="text-sm text-gray-100 sm:text-base font-jakarta-regular">
                 Fundador e CEO da Logos Academy
               </p>
-
             </div>
 
           </div>
@@ -336,7 +359,23 @@ const Page = () => {
 /*  * /
       <section className="bg-transparent py-16">
 
-  <div className="mx-auto w-full max-w-6xl px-5">
+  <div
+    className="
+      mx-auto
+      w-full
+      max-w-[95%]
+      sm:max-w-3xl
+      md:max-w-4xl
+      lg:max-w-5xl
+      xl:max-w-6xl
+      2xl:max-w-7xl
+      px-4
+      sm:px-6
+      md:px-8
+      lg:px-10
+      xl:px-12
+    "
+  >
 
     <div className="overflow-hidden rounded-xl border border-transparent bg-origin-border">
 
@@ -350,12 +389,13 @@ const Page = () => {
             alt="Instrutor Gregorio"
             className="
               rounded-full
-              w-64
+              w-56
               sm:w-72
               md:w-80
-              lg:w-105
-              h-[65vh]
-              
+              lg:w-[420px]
+              h-auto          /* remove corte */
+              aspect-square
+              max-w-full
             "
             priority
           />
@@ -365,7 +405,6 @@ const Page = () => {
         {/* TEXTO */}
         <div className="w-full space-y-6 lg:w-1/2">
 
-          {/* TAG */}
           <div className="w-fit overflow-hidden rounded border border-orange-600 bg-gradient-to-b from-orange-600 to-orange-600">
             <div className="flex items-center rounded bg-gray-950 px-4 py-0.5">
               <h2 className="my-1 bg-gradient-to-r from-white to-white bg-clip-text font-mono text-xs font-medium text-transparent sm:text-sm md:text-base">
@@ -374,23 +413,19 @@ const Page = () => {
             </div>
           </div>
 
-          {/* NOME */}
           <p className="text-2xl font-cooper-bold text-orange-500 sm:text-3xl lg:text-4xl">
             Gregorio Arlindo Pinheiro Jr
           </p>
 
-          {/* BIO */}
           <p className="text-sm text-justify text-white sm:text-base md:text-lg lg:text-base font-jakarta-regular">
             Desenvolvedor Full Stack | NodeJS | React. Apaixonado por
             programação e por aprender novas tecnologias, sempre buscando
             evolução constante e ajudando outros devs a alcançarem novos níveis.
           </p>
 
-          {/* LISTA */}
           <div className="space-y-4 pt-4">
 
             <div className="flex items-center gap-4 border-t border-gray-700 pt-4">
-
               <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
                 <circle cx="20" cy="20.2148" r="15.5" />
                 <circle cx="20" cy="20.2148" r="12" className="fill-gray-950" />
@@ -404,11 +439,9 @@ const Page = () => {
               <p className="text-sm text-gray-100 sm:text-base font-jakarta-regular">
                 +11 anos de experiência na área de programação
               </p>
-
             </div>
 
             <div className="flex items-center gap-4 border-t border-gray-700 pt-4">
-
               <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
                 <circle cx="20" cy="20.2148" r="15.5" />
                 <circle cx="20" cy="20.2148" r="12" className="fill-gray-950" />
@@ -419,10 +452,9 @@ const Page = () => {
                 />
               </svg>
 
-              <p className="text-sm text-gray-100 sm:text-base font-jakarta-regular ">
+              <p className="text-sm text-gray-100 sm:text-base font-jakarta-regular">
                 Instrutor
               </p>
-
             </div>
 
           </div>

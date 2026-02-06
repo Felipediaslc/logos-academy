@@ -310,128 +310,118 @@ const Page: React.FC = () => {
         </div>
       </section>
     
-      <section className="w-full bg-gray-950 py-16 lg:py-24">
-        <div className="mx-auto w-full max-w-[78.5rem] px-5">
-          {/* GRID */}
-          <div className="grid gap-16 lg:grid-cols-2 items-center">
-            {/* TEXTO */}
-            <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-              {/* TAG */}
-              <div className="mb-6">
-                <div className="rounded bg-gradient-to-b from-orange-600 to-orange-600 p-[1px]">
-                  <div className="bg-gray-950 px-4 py-2 rounded">
-                    <span className="text-xs font-mono text-white">
-                      FALE CONOSCO_
-                    </span>
-                  </div>
-                </div>
-              </div>
+<section className="w-full bg-gray-950 py-16 lg:py-24">
+  <div
+    className="
+      mx-auto
+      w-full
+      max-w-[1280px] /* Ajustado para comportar até 1920px de tela com respiro */
+      
+      /* RESPIRO MOBILE REAL - Garante que o conteúdo não cole nas bordas */
+      px-4
+      sm:px-6
+      md:px-8
+      lg:px-10
+      xl:px-12
+    "
+  >
+    {/* GRID - Responsividade do layout base */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
 
-              {/* TITLE */}
-              <h2
-                className="
-          text-2xl
-          md:text-3xl
-          lg:text-4xl
-          font-cooper-bold
-          text-orange-500
-          max-w-xl
-        "
-              >
-                Empresas já embarcaram com a gente.
-              </h2>
-
-              {/* TEXT */}
-              <p
-                className="
-          mt-6
-          text-sm
-          md:text-base
-          text-gray-300
-          max-w-lg
-          font-jakarta-regular
-        "
-              >
-                Descubra como podemos atender aos desafios do seu negócio!
-              </p>
-            </div>
-
-            {/* FORM */}
-            <div className="w-full max-w-md mx-auto lg:mx-0">
-              <h3
-                className="
-          text-2xl
-          md:text-3xl
-          font-cooper-bold
-          text-orange-500
-          text-center
-          lg:text-left
-          mb-10
-        "
-              >
-                Sign Up Empresas
-              </h3>
-
-              <form onSubmit={handleSubmit} className="flex flex-col gap-8 font-jakarta-regular">
-                {/* INPUT */}
-                <Input
-                  id="name"
-                  label="Nome"
-                  value={formData.name}
-                  error={errors.name}
-                  onChange={handleChange}
-                />
-
-                <Input
-                  id="nameEmpresa"
-                  label="Nome da Empresa"
-                  value={formData.nameEmpresa}
-                  error={errors.nameEmpresa}
-                  onChange={handleChange}
-                />
-
-                <Input
-                  id="fone"
-                  label="Telefone"
-                  value={formData.fone}
-                  error={errors.fone}
-                  onChange={handleChange}
-                />
-
-                <Input
-                  id="email"
-                  type="email"
-                  label="E-mail"
-                  value={formData.email}
-                  error={errors.email}
-                  onChange={handleChange}
-                />
-
-                {/* BUTTON */}
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="
-              w-full
-              rounded-lg
-              bg-orange-500
-              py-3
-              font-jakarta-regular
-
-              font-medium
-              text-gray-950
-              transition
-              hover:bg-orange-600
-              disabled:opacity-60
-            "
-                >
-                  {loading ? "Enviando..." : "Enviar"}
-                </button>
-              </form>
+      {/* TEXTO */}
+      <div className="flex flex-col items-center text-center lg:items-start lg:text-left w-full">
+        {/* TAG */}
+        <div className="mb-6">
+          <div className="rounded bg-gradient-to-b from-orange-600 to-orange-600 p-[1px]">
+            <div className="bg-gray-950 px-4 py-2 rounded">
+              <span className="text-xs font-mono text-white">
+                FALE CONOSCO_
+              </span>
             </div>
           </div>
         </div>
-      </section>
+
+        {/* TITLE */}
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-cooper-bold text-orange-500 w-full max-w-xl">
+          Empresas já embarcaram com a gente.
+        </h2>
+
+        {/* TEXT */}
+        <p className="mt-6 text-sm md:text-base text-gray-300 w-full max-w-lg font-jakarta-regular">
+          Descubra como podemos atender aos desafios do seu negócio!
+        </p>
+      </div>
+
+      {/* FORM */}
+      <div className="flex w-full justify-center lg:justify-end">
+        {/* WRAPPER CENTRALIZADOR REAL - Controla a largura máxima no desktop e mobile */}
+        <div className="w-full max-w-full sm:max-w-md">
+          <h3 className="text-2xl md:text-3xl font-cooper-bold text-orange-500 text-center lg:text-left mb-10">
+            Sign Up Empresas
+          </h3>
+
+          <form
+            onSubmit={handleSubmit}
+            className="flex w-full flex-col gap-8 font-jakarta-regular"
+          >
+            <Input
+              id="name"
+              label="Nome"
+              value={formData.name}
+              error={errors.name}
+              onChange={handleChange}
+            />
+
+            <Input
+              id="nameEmpresa"
+              label="Nome da Empresa"
+              value={formData.nameEmpresa}
+              error={errors.nameEmpresa}
+              onChange={handleChange}
+            />
+
+            <Input
+              id="fone"
+              label="Telefone"
+              value={formData.fone}
+              error={errors.fone}
+              onChange={handleChange}
+            />
+
+            <Input
+              id="email"
+              type="email"
+              label="E-mail"
+              value={formData.email}
+              error={errors.email}
+              onChange={handleChange}
+            />
+
+            {/* BUTTON */}
+            <button
+              type="submit"
+              disabled={loading}
+              className="
+                w-full
+                rounded-lg
+                bg-orange-500
+                py-3
+                font-jakarta-regular
+                font-medium
+                text-gray-950
+                transition
+                hover:bg-orange-600
+                disabled:opacity-60
+              "
+            >
+              {loading ? "Enviando..." : "Enviar"}
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       <Footer />
     </>
   );
