@@ -1,42 +1,33 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+
+import ConditionalNavBar from "./components/routPage/rout";
+
 import "./globals.css";
-import ConditionalNavBar from "../app/components/routPage/rout"
 
 
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Logos Academy",
   description: "Curso Full-Stack JavaScript",
-  icons:{
-    icon: ['/logos-aba.png?v=100'],
-    apple:['/logos-aba.png?v=100'],
-    shortcut:['/logos-aba.png']
-  }
+  icons: {
+    icon: ["/logos-aba.png?v=100"],
+    apple: ["/logos-aba.png?v=100"],
+    shortcut: ["/logos-aba.png"],
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` antialiased`}
       >
-        <ConditionalNavBar /> {/* Renderiza o menu condicionamente */}
+        <ConditionalNavBar />
         {children}
       </body>
     </html>

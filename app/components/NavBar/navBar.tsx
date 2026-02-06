@@ -1,83 +1,113 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
-import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+
 import ImageNav from "../../../public/img-navbar.png";
 import Button from "../ui/Button";
-import Link from 'next/link';
 
+const links = [
+  { name: "Cursos", href: "#curso" },
+  { name: "Sobre", href: "/components/sobre" },
+  { name: "Para empresas", href: "/components/empresa" },
+];
 
-const Header = () => {
+export default function Header() {
+  const [open, setOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
-   
-    const Links = [
-        { name: "Cursos", link: "#curso" },
-        { name: "Sobre", link: "/components/sobre" },
-        { 
-            name: "Para empresas", 
-            link: "/components/empresa", 
-            target: "_self", // Adicionado o target
-        },
-    ];
-    const [open, setOpen] = useState(false);
+  // Fecha menu ao clicar fora
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    };
 
-    return (
-        <div className=' w-full fixed 2xl:fixed z-10 top-0 left-0'>
-            <div className='  md:flex items-center justify-between bg-orange-500 py-3 
-            md:px-3 px-7'>
-                {/* Logo section */}
-                <Link href="/">
-                <div className='md:p-0 cursor-pointer flex items-center gap-1'>
-                    
-                    <Image
-                        src={ImageNav}
-                        width={950}
-                        height={900}
-                        className="w-[100px] h-[55px] 
-                                   md:w-[100px] md:h-[50px] 
-                                   xl:w-[100px] xl:h-[55px] xl:py-0"
-                        alt="image"
-                    />
-                    
-                </div>
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  return (
+    <header className="fixed top-0 left-0 z-50 w-full bg-orange-500">
+      <div
+        ref={menuRef}
+        className="mx-auto flex items-center justify-between px-7 py-3 md:px-6"
+      >
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
+          <Image
+            src={ImageNav}
+            alt="Logo"
+            width={100}
+            height={55}
+            className="h-13.75 w-25"
+            priority
+          />
+        </Link>
+
+        {/* Botão hamburger */}
+        <button
+          onClick={() => setOpen((prev) => !prev)}
+          aria-expanded={open}
+          aria-controls="main-menu"
+          aria-label="Abrir menu"
+          className="lg:hidden text-gray-950 bg-transparent border-none cursor-pointer focus:outline-none"
+        >
+          <span className="relative block h-7 w-7">
+            <Menu
+              className={`absolute inset-0 transition-all duration-300 ${
+                open ? "scale-0 opacity-0" : "scale-100 opacity-100"
+              }`}
+            />
+            <X
+              className={`absolute inset-0 transition-all duration-300 ${
+                open ? "scale-100 opacity-100" : "scale-0 opacity-0"
+              }`}
+            />
+          </span>
+        </button>
+
+        {/* Menu */}
+        <nav
+          id="main-menu"
+          className={`
+            absolute left-0 top-full w-full bg-orange-500
+            transition-all duration-300 ease-in-out
+            lg:static lg:w-auto lg:bg-transparent
+            ${
+              open
+                ? "visible opacity-100 translate-y-0"
+                : "invisible opacity-0 -translate-y-4 lg:visible lg:opacity-100 lg:translate-y-0"
+            }
+          `}
+        >
+          <ul className="flex flex-col items-center gap-8 py-10 lg:flex-row lg:gap-6 lg:py-0 list-none">
+            {links.map((link) => (
+              <li key={link.name}>
+                <Link
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="text-gray-950 text-[1.2rem] md:text-[1rem]
+                             font-cooper-bold tracking-widest
+                             hover:text-slate-100 transition-colors
+                             no-underline"
+                >
+                  {link.name}
                 </Link>
-                {/* Menu icon */}
-                <div onClick={() => setOpen(!open)} className='absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7'>
-                    {open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
-                </div>
+              </li>
+            ))}
 
-                {/* Link items */}
- <ul className={`lg:mb-0 -mt-1 lg:mt-0   md:h-0  xl:mr-6 2xl:mr-[9rem]
-  md:flex md:items-center md:py-2
-md:pb-0 pb-12 absolute md:static bg-orange-500 md:z-auto z-[-1]
-    left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in
-                    ${open ? 'top-12' : 'top-[-700px] lg:top-[-490px]'}`}>
-                    {Links.map((link) => (
-                        <li key={link.name} className='   text-center -ml-[2.5rem] md:ml-8 md:my-0 my-14 font-cooper-bold'>
-                            <a
-                                href={link.link}
-                                target={link.name === "Para empresas" ? "_self" : "_self"} // Abrir em nova aba para "Para empresas"
-                                onClick={() => {
-                                    if (link.name === "Para empresas") {
-                                       
-                                        setOpen(true); // Fecha o menu ao clicar no link "Para empresas"
-                                    }
-                                }}
-                                className=' text-gray-950 text-[1.2rem] hover:text-slate-100 md:text-[1rem] font-cooper-bold tracking-widest duration-500'>
-                                {link.name}
-                            </a>
-                        </li>
-                    ))}
-                   <Link href="/components/cadastUser">
-                    <Button >
-                        Inscreva-se
-                    </Button>
-                    </Link>
-                </ul>
-            </div>
-        </div>
-    );
-};
-
-export default Header;
+            <li>
+              <Link href="/components/cadastUser" onClick={() => setOpen(false)}>
+                <Button>Inscreva-se</Button>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+}
