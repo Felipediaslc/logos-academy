@@ -34,7 +34,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 z-50 w-full bg-orange-500">
       <div
         ref={menuRef}
-        className="mx-auto flex items-center justify-between px-7 py-3 md:px-6"
+        className="mx-auto flex items-center justify-between px-7 py-3 md:px-6 "
       >
         {/* Logo */}
         <Link href="/" className="flex items-center">
@@ -84,7 +84,7 @@ export default function Header() {
             }
           `}
         >
-          <ul className="flex flex-col items-center gap-8 py-10 lg:flex-row lg:gap-6 lg:py-0 list-none">
+          <ul className=" px-2 lg:px-0 flex flex-col items-center gap-8 py-10 lg:flex-row lg:gap-6 lg:py-0 list-none">
             {links.map((link) => (
               <li key={link.name}>
                 <Link

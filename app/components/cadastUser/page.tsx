@@ -95,7 +95,7 @@ const RegisterForm: React.FC = () => {
 
       {/* IMAGE */}
       <div
-        className="
+        className="pt-24 lg:pt-0
           w-[70vw]
           md:w-[50vw]
           lg:w-[35vw]
@@ -106,17 +106,17 @@ const RegisterForm: React.FC = () => {
           src={Logos}
           width={500}
           height={500}
-          className="w-full h-auto"
+          className="w-full h-auto "
           alt="Phone image"
         />
       </div>
 
       {/* FORM — NÃO ALTEREI NADA DENTRO */}
       <div
-        className="
+        className=" 
           md:w-8/12
           lg:w-5/12
-          flex flex-col items-center
+          flex flex-col items-center mb-16
         "
       >
 
