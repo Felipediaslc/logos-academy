@@ -114,7 +114,7 @@ const Page = () => {
 
 /*  * /
 
-      <section className="relative py-10 bg-transparent">
+      <section className="relative py-10  ">
 
   <div
     className="
@@ -125,8 +125,8 @@ const Page = () => {
       flex-col
       items-center
       justify-center
-
-      /* LARGURA RESPONSIVA */
+      
+    
       max-w-[95%]
       sm:max-w-3xl
       md:max-w-4xl
@@ -134,7 +134,7 @@ const Page = () => {
       xl:max-w-6xl
       2xl:max-w-7xl
 
-      /* RESPIRO LATERAL */
+     
       px-4
       sm:px-6
       md:px-8
@@ -143,7 +143,7 @@ const Page = () => {
     "
   >
     {/* TAG */}
-    <div className="mb-8 w-fit overflow-hidden rounded border border-orange-600 bg-gradient-to-b from-orange-600 to-orange-600">
+    <div className=" mb-8 w-fit overflow-hidden rounded border border-orange-600 bg-gradient-to-b from-orange-600 to-orange-600">
       <div className="flex items-center rounded bg-gray-950 px-4 py-2">
         <span className="bg-gradient-to-r from-white to-white bg-clip-text font-mono text-xs font-medium text-transparent sm:text-sm md:text-base">
           Perguntas_
@@ -166,6 +166,8 @@ const Page = () => {
         sm:text-base
         md:text-lg
         font-jakarta-regular
+        
+        lg:items-center
       "
     >
       {/* ITEM 1 */}
