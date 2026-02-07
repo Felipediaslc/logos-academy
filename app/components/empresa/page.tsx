@@ -85,112 +85,144 @@ const Page: React.FC = () => {
   };
   return (
     <>
-      <section className="w-full bg-gray-950 py-20">
-        <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-5 lg:flex-row lg:justify-between">
-          {/* TEXTO */}
-          <div className="flex w-full flex-col items-center gap-6 text-center lg:w-1/2 lg:items-start lg:text-left">
-            {/* LOGO + TAG */}
-            <div className="flex items-end gap-2 whitespace-nowrap">
-              <Image
-                src={logo}
-                alt="Logo Logos Academy Empresas"
-                width={150}
-                height={90}
-                className="h-auto w-24 sm:w-32"
-                priority
-              />
+     <section className="w-full bg-gray-950 pt-20 pb-28 lg:py-20">
+  <div
+    className="
+      mx-auto
+      flex w-full max-w-7xl
+      flex-col items-center
+      gap-12
+      px-0.1 sm:px-8 lg:px-10
+      lg:flex-row lg:items-center lg:justify-between
+      lg:gap-16 xl:gap-24 2xl:gap-32
+    "
+  >
+    {/* TEXTO */}
+    <div className="flex w-full flex-col items-center gap-6 text-center lg:w-1/2 lg:items-start lg:text-left">
+      
+      {/* LOGO */}
+      <div className="flex items-end gap-2 whitespace-nowrap">
+        <Image
+          src={logo}
+          alt="Logo Logos Academy Empresas"
+          width={150}
+          height={90}
+          className="h-auto w-24 sm:w-28 lg:w-32"
+          priority
+        />
+        <strong className="font-jakarta-regular font-medium text-white text-sm sm:text-base lg:text-xl">
+          Para Empresas
+        </strong>
+      </div>
 
-              <strong className="font-jakarta-regular font-medium text-white sm:text-lg lg:text-xl">
-                Para Empresas
-              </strong>
-            </div>
+      {/* HEADLINE */}
+      <h1
+        className="
+          w-full
+          max-w-[22ch] sm:max-w-[26ch] lg:max-w-xl
+          text-2xl sm:text-3xl lg:text-5xl xl:text-6xl
+          leading-tight
+          font-cooper-bold
+          text-orange-500
+        "
+      >
+        Capacite seu time de tecnologia e leve sua empresa para o próximo nível
+      </h1>
 
-            {/* HEADLINE */}
-            <h1
-              className="
-        max-w-xl
-        text-3xl
-        font-cooper-bold
-        text-orange-500
-        sm:text-4xl
-        lg:text-5xl
-      "
-            >
-              Capacite seu time de tecnologia e leve sua empresa para o próximo
-              nível
-            </h1>
+      {/* TEXTO */}
+      <p
+        className="
+          w-full
+          max-w-[32ch] sm:max-w-[40ch] lg:max-w-lg
+          text-sm sm:text-base lg:text-lg xl:text-xl
+          leading-relaxed
+          text-white
+          font-jakarta-regular
+        "
+      >
+        Agora você RH ou Tech Lead gerencia o aprendizado e acessos de forma simples, enquanto seu time evolui com conteúdos práticos e atualizados.
+      </p>
 
-            {/* TEXTO */}
-            <p className="max-w-lg text-white sm:text-base lg:text-lg font-jakarta-regular ">
-              Agora você RH ou Tech Lead gerencia o aprendizado e acessos de
-              forma simples, enquanto seu time evolui com conteúdos práticos e
-              atualizados.
-            </p>
-
-            {/* CTA */}
-            <a
-              href="#subscription"
-              className=" no-underline font-jakarta-regular
+      {/* CTA */}
+      <a
+        href="#subscription"
+        className="
+          mt-2
+          no-underline
+          font-jakarta-regular
           flex items-center justify-center gap-2
           rounded-lg
           bg-orange-500
           px-8 py-4
-          text-sm font-bold uppercase
+          text-xs sm:text-sm
+          font-bold uppercase
           text-gray-950
           transition hover:bg-orange-400
           sm:w-fit
         "
-            >
-              Fale com um especialista
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </a>
-          </div>
+      >
+        Fale com um especialista
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-5 w-5"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+    </div>
 
-          {/* IMAGEM */}
-          <div className="flex w-full justify-center lg:w-1/2">
-            <Image
-              src={Home}
-              alt="Plataforma Logos Academy para empresas"
-              width={600}
-              height={600}
-              priority
-              className="
-          w-64
-          sm:w-80
-          md:w-105
-          lg:w-130
-          h-auto
-          object-contain
-        "
-              sizes="
-          (max-width:768px) 260px,
-          (max-width:1024px) 420px,
-          520px
-        "
-            />
-          </div>
-        </div>
-      </section>
+    {/* IMAGEM */}
+    <div className="flex w-full justify-center lg:w-1/2">
+  <Image
+    src={Home}
+    alt="Plataforma Logos Academy para empresas"
+    width={600}
+    height={600}
+    priority
+    className="
+      mx-auto
+      w-[85%]
+      max-w-[320px]
+      sm:max-w-[380px]
+      md:max-w-[420px]
+      lg:w-full
+      lg:max-w-[520px]
+      h-auto
+      object-contain
+    "
+    sizes="
+      (max-width:640px) 85vw,
+      (max-width:768px) 380px,
+      (max-width:1024px) 420px,
+      520px
+    "
+  />
+</div>
+  </div>
+</section>
     
-      <section className="w-full bg-orange-500 py-16 md:py-20">
-        <div className="mx-auto w-full max-w-[78.5rem] px-5">
+      <section className="w-full bg-orange-500 pt-20 pb-28 lg:py-20">
+        <div className="mx-auto w-full max-w-[80rem] px-7">
           {/* HEADER */}
-          <div className="flex flex-col gap-4 text-left lg:items-center lg:text-center">
-            <strong className="text-xs md:text-sm font-bold uppercase tracking-widest text-gray-950 font-jakarta-regular">
+          <div className="flex flex-col gap-4 text-center lg:items-center lg:text-center ">
+            <strong className="  block
+  text-xs md:text-sm  w-[88vw]
+  font-bold
+  uppercase
+  tracking-widest
+  text-gray-950
+  
+  text-center
+  font-jakarta-regular ">
               PORQUE EMBARCAR NA LOGOS ACADEMY
             </strong>
 
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-cooper-bold text-gray-950 max-w-[788px]">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-cooper-bold text-gray-950 max-w-[788px]  text-center w-[87.5vw]">
               Um ecossistema completo para levar sua empresa e seu time para o
               próximo nível
             </h2>
@@ -220,7 +252,7 @@ const Page: React.FC = () => {
                     <strong className="text-lg text-gray-950 font-jakarta-regular">
                       Retenção de talentos
                     </strong>
-                    <p className="text-sm text-white/90 font-jakarta-regular">
+                    <p className="text-sm text-white/90 font-jakarta-regular w-[75vw] lg:w-130">
                       Investir no desenvolvimento profissional demonstra
                       compromisso com as equipes, reduzindo rotatividade.
                     </p>
@@ -233,7 +265,7 @@ const Page: React.FC = () => {
                     <strong className="text-lg text-gray-950 font-jakarta-regular">
                       Produtividade e qualidade
                     </strong>
-                    <p className="text-sm text-white/90">
+                    <p className="text-sm text-white/90 font-jakarta-regular ">
                       Capacitação eleva habilidades técnicas e melhora entregas.
                     </p>
                   </div>
@@ -329,7 +361,7 @@ const Page: React.FC = () => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
 
       {/* TEXTO */}
-      <div className="flex flex-col items-center text-center lg:items-start lg:text-left w-full">
+      <div className="flex flex-col items-center text-center lg:items-start lg:text-left  w-[92vw] lg:w-full  ">
         {/* TAG */}
         <div className="mb-6">
           <div className="rounded bg-gradient-to-b from-orange-600 to-orange-600 p-[1px]">
@@ -353,7 +385,7 @@ const Page: React.FC = () => {
       </div>
 
       {/* FORM */}
-      <div className="flex w-full justify-center lg:justify-end">
+      <div className="flex lg:w-full justify-center lg:justify-end  w-[92vw]">
         {/* WRAPPER CENTRALIZADOR REAL - Controla a largura máxima no desktop e mobile */}
         <div className="w-full max-w-full sm:max-w-md">
           <h3 className="text-2xl md:text-3xl font-cooper-bold text-orange-500 text-center lg:text-left mb-10">
