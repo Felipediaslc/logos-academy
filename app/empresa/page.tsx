@@ -180,68 +180,108 @@ const Page: React.FC = () => {
     </div>
 
   </div>
-</section>
+  </ section>
 
-      {/* BENEFÍCIOS */}
-      <section className="w-full bg-orange-500 py-20">
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
-          <div className="flex flex-col items-center gap-4 text-center">
-            <strong className="text-xs md:text-sm font-bold uppercase tracking-widest text-gray-950 font-jakarta-regular">
-              PORQUE EMBARCAR NA LOGOS ACADEMY
-            </strong>
 
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-cooper-bold text-gray-950 max-w-3xl">
-              Um ecossistema completo para levar sua empresa e seu time para o próximo nível
-            </h2>
-          </div>
+{/* BENEFÍCIOS */}
+<section className="w-full bg-orange-500 py-14 sm:py-16 lg:py-20">
+  <div className="mx-auto w-full max-w-7xl px-3 sm:px-6">
 
-          <div className="mt-12 grid gap-12 md:grid-cols-2">
-            <div className="space-y-8">
-              <strong className="text-xl lg:text-2xl font-cooper-bold text-gray-50">
-                Para sua empresa
-              </strong>
+    {/* Header */}
+    <div className="flex flex-col items-center gap-3 sm:gap-4 text-center w-[94vw]! sm:w-[92vw] md:w-full ">
+      <strong className="text-[11px] sm:text-xs md:text-sm font-bold uppercase tracking-widest text-gray-950 font-jakarta-regular">
+        PORQUE EMBARCAR NA LOGOS ACADEMY
+      </strong>
 
-              <div className="space-y-6">
-                {[
-                  ["Retenção de talentos","Investir no desenvolvimento profissional demonstra compromisso com as equipes, reduzindo rotatividade."],
-                  ["Produtividade e qualidade","Capacitação eleva habilidades técnicas e melhora entregas."],
-                  ["Inovação","Times atualizados aumentam competitividade."]
-                ].map(([title, desc]) => (
-                  <div key={title} className="flex gap-4">
-                    <IconCheck className="text-lime-600 shrink-0 mt-1" />
-                    <div>
-                      <strong className="text-lg text-gray-950 font-jakarta-regular">{title}</strong>
-                      <p className="text-sm text-white/90 font-jakarta-regular max-w-md">{desc}</p>
-                    </div>
-                  </div>
-                ))}
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+      max-w-[92vw] md:max-w-3xl
+      font-cooper-bold text-gray-950 leading-snug">
+        Um ecossistema completo para levar sua empresa e seu time para o próximo nível
+      </h2>
+    </div>
+
+    {/* Conteúdo */}
+    <div className="mt-10 sm:mt-12 grid gap-10 sm:gap-12 md:grid-cols-2">
+      
+      {/* PARA EMPRESA */}
+      <div className="space-y-6 sm:space-y-8">
+        <strong className="text-lg sm:text-xl lg:text-2xl font-cooper-bold text-gray-50">
+          Para sua empresa
+        </strong>
+
+        <div className="space-y-5 sm:space-y-6 max-w-[92vw] md:max-w-full">
+          {[
+            [
+              "Retenção de talentos",
+              "Investir no desenvolvimento profissional demonstra compromisso com as equipes, reduzindo rotatividade."
+            ],
+            [
+              "Produtividade e qualidade",
+              "Capacitação eleva habilidades técnicas e melhora entregas."
+            ],
+            [
+              "Inovação",
+              "Times atualizados aumentam competitividade."
+            ]
+          ].map(([title, desc]) => (
+            <div key={title} className="flex gap-4">
+              <IconCheck className="text-lime-600 shrink-0 mt-1 w-5 h-5 sm:w-6 sm:h-6" />
+
+              <div>
+                <strong className="text-base sm:text-lg text-gray-950 font-jakarta-regular">
+                  {title}
+                </strong>
+
+                <p className="text-sm lg:text-base text-white/90 font-jakarta-regular leading-relaxed">
+                  {desc}
+                </p>
               </div>
             </div>
-
-            <div className="space-y-8 md:border-l md:pl-10 border-white/30">
-              <strong className="text-xl lg:text-2xl font-cooper-bold text-amber-50">
-                Para o colaborador
-              </strong>
-
-              <div className="space-y-6">
-                {[
-                  ["Crescimento profissional","Aprender novas tecnologias valoriza o profissional."],
-                  ["Upgrade no portfólio","Projetos práticos aumentam experiência."],
-                  ["Atualização constante","Mantém relevância no mercado."]
-                ].map(([title, desc]) => (
-                  <div key={title} className="flex gap-4">
-                    <IconCheck className="text-lime-600 shrink-0 mt-1" />
-                    <div>
-                      <strong className="text-lg text-gray-950 font-jakarta-regular">{title}</strong>
-                      <p className="text-sm text-white/90 font-jakarta-regular max-w-md">{desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
+      </div>
+
+      {/* PARA COLABORADOR */}
+      <div className="space-y-6 sm:space-y-8 md:border-l md:pl-10 border-white/30 max-w-[92vw] md:max-w-full">
+        <strong className="text-lg sm:text-xl lg:text-2xl font-cooper-bold text-amber-50">
+          Para o colaborador
+        </strong>
+
+        <div className="space-y-5 sm:space-y-6">
+          {[
+            [
+              "Crescimento profissional",
+              "Aprender novas tecnologias valoriza o profissional."
+            ],
+            [
+              "Upgrade no portfólio",
+              "Projetos práticos aumentam experiência."
+            ],
+            [
+              "Atualização constante",
+              "Mantém relevância no mercado."
+            ]
+          ].map(([title, desc]) => (
+            <div key={title} className="flex gap-4">
+              <IconCheck className="text-lime-600 shrink-0 mt-1 w-5 h-5 sm:w-6 sm:h-6" />
+
+              <div>
+                <strong className="text-base sm:text-lg text-gray-950 font-jakarta-regular">
+                  {title}
+                </strong>
+
+                <p className="text-sm lg:text-base text-white/90 font-jakarta-regular leading-relaxed">
+                  {desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* FORM */}
       <section className="w-full bg-gray-950 py-14 sm:py-20">
@@ -298,7 +338,9 @@ const Page: React.FC = () => {
 </section>
 
       <Footer />
+
     </>
+
   );
 };
 
