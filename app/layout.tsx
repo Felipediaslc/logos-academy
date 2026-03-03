@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
-import ConditionalNavBar from "./components/routPage/rout";
+import ConditionalNavBar from "@/app/routPage/page";
 
-import "./globals.css";
-
-
+import "@/style/globals.css";
 
 export const metadata: Metadata = {
   title: "Logos Academy",
@@ -24,9 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={` antialiased`}
-      >
+      <body className={` antialiased`}>
         <ConditionalNavBar />
         {children}
       </body>

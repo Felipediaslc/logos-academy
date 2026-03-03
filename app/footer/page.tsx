@@ -3,7 +3,7 @@
 import React from 'react';
 
 import Image from "next/image";
-import logo from "../../../public/logos-todo.png";
+import logo from "../../public/logos-todo.png";
 const Footer: React.FC = () =>{
 
     return (

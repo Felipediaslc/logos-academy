@@ -32,7 +32,8 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "19.2.10",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "eslint": "^9",
     "eslint-config-next": "^16.1.6",
     "prettier": "^3.3.3",

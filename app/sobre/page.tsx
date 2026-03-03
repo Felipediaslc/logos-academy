@@ -1,17 +1,15 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Instrutor from "../../../public/danielcaval.png";
-import InstrutorGreg from "../../../public/greg.jpeg";
-import LogosAcademy from "../../../public/LOGOS-ACADEMY.gif";
+import Instrutor from "../../public/danielcaval.png";
+import InstrutorGreg from "../../public/greg.jpeg";
+import LogosAcademy from "../../public/LOGOS-ACADEMY.gif";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../ui/accordion";
-
-
+} from "@/components/ui/accordion";
 
 const Page = () => {
 
@@ -474,7 +472,3 @@ const Page = () => {
 };
 
 export default Page;
-
-
-
-
