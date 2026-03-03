@@ -189,7 +189,7 @@ const Page: React.FC = () => {
 
     {/* Header */}
     <div className="flex flex-col items-center gap-3 sm:gap-4 text-center w-[94vw]! sm:w-[92vw] md:w-full ">
-      <strong className="text-[11px] sm:text-xs md:text-sm font-bold uppercase tracking-widest text-gray-950 font-jakarta-regular">
+      <strong className="text-[12px] sm:text-xs md:text-sm font-bold uppercase tracking-widest text-gray-950 font-jakarta-regular">
         PORQUE EMBARCAR NA LOGOS ACADEMY
       </strong>
 
