@@ -75,7 +75,7 @@ export default function Header() {
         <nav
           id="main-menu"
           className={`
-            absolute left-0 top-full w-full bg-orange-600 shadow-md
+            absolute left-0 top-full w-full bg-orange-500 shadow-md
             transition-all duration-300 ease-in-out
             lg:static lg:w-auto lg:bg-transparent lg:shadow-none
             ${
