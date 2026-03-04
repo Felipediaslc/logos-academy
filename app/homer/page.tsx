@@ -21,7 +21,7 @@ const techs = [
 
 const HomePage: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center bg-orange-500 py-12 lg:py-0">
+    <section className="min-h-screen flex items-center bg-orange-500 py-24 lg:py-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         
         {/* Texto */}

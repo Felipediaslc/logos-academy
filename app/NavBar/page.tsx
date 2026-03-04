@@ -31,7 +31,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-orange-500 shadow-sm">
+    <header className="fixed top-0 left-0 z-50 w-full bg-orange-500 ">
       <div
         ref={menuRef}
         className="mx-auto flex items-center justify-between max-w-7xl px-6 py-4"
