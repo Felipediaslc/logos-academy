@@ -73,26 +73,12 @@ const RegisterForm: React.FC = () => {
   };
 
   return (
-    <section className="min-h-[90vh] bg-orange-500 flex items-center py-12">
+    <section className="min-h-[95vh] bg-orange-500 flex items-center py-12">
       <div className="mx-auto w-full max-w-5xl px-6">
-
-        <div className="
-          flex flex-col items-center justify-center
-          gap-10
-          lg:flex-row lg:justify-between lg:items-center
-        ">
+        <div className="flex flex-col items-center justify-center gap-10 lg:flex-row lg:justify-between lg:items-center">
 
           {/* IMAGE */}
-          <div
-            className="
-              pt-12 lg:pt-0
-              w-[70%]
-              sm:w-[55%]
-              md:w-[40%]
-              lg:w-[30%]
-              flex justify-center
-            "
-          >
+          <div className="pt-12 lg:pt-0 w-[70%] sm:w-[55%] md:w-[40%] lg:w-[30%] flex justify-center">
             <Image
               src={Logos}
               width={420}
@@ -104,104 +90,144 @@ const RegisterForm: React.FC = () => {
           </div>
 
           {/* FORM */}
-          <div
-            className="
-              w-full
-              sm:w-[80%]
-              md:w-[60%]
-              lg:w-[40%]
-              flex flex-col items-center
-            "
-          >
-            {/* TITLE */}
-            <div className="flex justify-center pb-6">
-              <h1 className="text-3xl sm:text-4xl text-white font-cooper-bold">
+          <div className="flex justify-center md:justify-start w-full max-w-md px-4 sm:px-0">
+            <div className="w-full">
+
+              {/* TITLE */}
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-cooper-bold text-white mb-6 text-center md:text-left tracking-widest ">
                 Sign Up
-              </h1>
-            </div>
+              </h3>
 
-            <form
-              className="flex w-full max-w-sm flex-col items-end gap-6"
-              onSubmit={handleSubmit}
-            >
-              {/* NAME */}
-              <div className="relative z-0 w-full group">
-                <input
-                  type="text"
-                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-950 dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white peer"
-                  placeholder=" "
-                  required
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                />
-                {errors.name && (
-                  <p className="text-sm text-white mt-1">{errors.name}</p>
-                )}
-                <label
-                  htmlFor="name"
-                  className="peer-focus:font-medium absolute text-sm text-slate-50 dark:text-slate-100 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-slate-50 peer-focus:dark:text-slate-200 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-jakarta-regular"
-                >
-                  Nome:
-                </label>
-              </div>
-
-              {/* FONE */}
-              <div className="relative z-0 w-full group">
-                <input
-                  type="text"
-                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-950 dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white peer"
-                  placeholder=" "
-                  required
-                  id="fone"
-                  name="fone"
-                  value={formData.fone}
-                  onChange={handleChange}
-                />
-                {errors.fone && (
-                  <p className="text-sm text-white mt-1">{errors.fone}</p>
-                )}
-                <label
-                  htmlFor="fone"
-                  className="peer-focus:font-medium absolute text-sm text-slate-50 dark:text-slate-100 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-slate-50 peer-focus:dark:text-slate-200 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-jakarta-regular"
-                >
-                  Telefone:
-                </label>
-              </div>
-
-              {/* EMAIL */}
-              <div className="relative z-0 w-full group">
-                <input
-                  type="email"
-                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-950 dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white peer"
-                  placeholder=" "
-                  required
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                />
-                {errors.email && (
-                  <p className="text-sm text-white mt-1">{errors.email}</p>
-                )}
-                <label
-                  htmlFor="email"
-                  className="peer-focus:font-medium absolute text-sm text-slate-50 dark:text-slate-100 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-left peer-focus:start-0 peer-focus:text-slate-50 peer-focus:dark:text-slate-200 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-jakarta-regular"
-                >
-                  Email:
-                </label>
-              </div>
-
-              <button
-                className="text-orange-500 bg-slate-50 hover:bg-slate-600 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center font-jakarta-regular dark:bg-gray-950 dark:hover:bg-slate-700 dark:focus:ring-slate-800"
-                type="submit"
-                disabled={loading}
+              {/* FORM */}
+              <form
+                onSubmit={handleSubmit}
+                className="flex flex-col gap-6 sm:gap-8 w-full font-jakarta-regular"
               >
-                {loading ? "Enviando..." : "Enviar"}
-              </button>
-            </form>
+                {/* NAME */}
+                <div className="relative w-full">
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder=" "
+                    className={`peer
+                       min-w-[89%]  
+                       sm:min-w-[90%]
+                       md:min-w-[90%]  
+                       lg:w-[91%]     
+                      bg-gray-900/50 backdrop-blur-md
+                      border border-gray-700 rounded-2xl
+                      px-5 pt-7 pb-3
+                      text-base sm:text-lg text-white
+                      transition-all duration-300
+                      focus:outline-none focus:ring-2 focus:ring-orange-400/50
+                      focus:border-orange-400
+                      ${errors.name ? "border-red-500 focus:ring-red-400/50" : ""}
+                    `}
+                  />
+                  <label
+                    htmlFor="name"
+                    className={`absolute left-5 text-gray-400 transition-all duration-300 pointer-events-none
+                      top-2 text-xs sm:text-sm
+                      peer-placeholder-shown:top-5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400
+                      peer-focus:top-2 peer-focus:text-xs peer-focus:text-orange-400
+                      ${formData.name ? "top-2 text-xs text-orange-400" : ""}
+                    `}
+                  >
+                    Nome:
+                  </label>
+                  {errors.name && <p className="mt-1 text-sm text-red-400 animate-fadeIn">{errors.name}</p>}
+                </div>
+
+                {/* FONE */}
+                <div className="relative w-full">
+                  <input
+                    id="fone"
+                    name="fone"
+                    type="text"
+                    value={formData.fone}
+                    onChange={handleChange}
+                    placeholder=" "
+                    className={`peer
+                       min-w-[89%]  
+                        sm:min-w-[90%] 
+                         md:min-w-[90%]   
+                         lg:w-[91%]      
+                      bg-gray-900/50 backdrop-blur-md
+                      border border-gray-700 rounded-2xl
+                      px-5 pt-7 pb-3
+                      text-base sm:text-lg text-white
+                      transition-all duration-300
+                      focus:outline-none focus:ring-2 focus:ring-orange-400/50
+                      focus:border-orange-400
+                      ${errors.fone ? "border-red-500 focus:ring-red-400/50" : ""}
+                    `}
+                  />
+                  <label
+                    htmlFor="fone"
+                    className={`absolute left-5 text-gray-400 transition-all duration-300 pointer-events-none
+                      top-2 text-xs sm:text-sm
+                      peer-placeholder-shown:top-5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400
+                      peer-focus:top-2 peer-focus:text-xs peer-focus:text-orange-400
+                      ${formData.fone ? "top-2 text-xs text-orange-400" : ""}
+                    `}
+                  >
+                    Telefone:
+                  </label>
+                  {errors.fone && <p className="mt-1 text-sm text-red-400 animate-fadeIn">{errors.fone}</p>}
+                </div>
+
+                {/* EMAIL */}
+                <div className="relative w-full">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder=" "
+                    className={`peer
+                       min-w-[89%]  
+                        sm:min-w-[90%] 
+                         md:min-w-[91%]   
+                         lg:w-[91%]      
+                      bg-gray-900/50 backdrop-blur-md
+                      border border-gray-700 rounded-2xl
+                      px-5 pt-7 pb-3
+                      text-base sm:text-lg text-white
+                      transition-all duration-300
+                      focus:outline-none focus:ring-2 focus:ring-orange-400/50
+                      focus:border-orange-400
+                      ${errors.email ? "border-red-500 focus:ring-red-400/50" : ""}
+                    `}
+                  />
+                  <label
+                    htmlFor="email"
+                    className={`absolute left-5 text-gray-400 transition-all duration-300 pointer-events-none
+                      top-2 text-xs sm:text-sm
+                      peer-placeholder-shown:top-5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400
+                      peer-focus:top-2 peer-focus:text-xs peer-focus:text-orange-400
+                      ${formData.email ? "top-2 text-xs text-orange-400" : ""}
+                    `}
+                  >
+                    Email:
+                  </label>
+                  {errors.email && <p className="mt-1 text-sm text-red-400 animate-fadeIn">{errors.email}</p>}
+                </div>
+
+                <button
+  type="submit"
+  disabled={loading}
+  className="w-full rounded-2xl bg-gray-950 py-3 font-semibold text-orange-500 text-lg transition-all duration-300 hover:bg-gray-800 hover:scale-[1.02] disabled:opacity-60"
+>
+  {loading ? "Enviando..." : "Enviar"}
+</button>
+              </form>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
