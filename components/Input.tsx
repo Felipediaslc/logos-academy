@@ -34,7 +34,7 @@ export const Input = ({
           bg-gray-900/50 backdrop-blur-md
           border border-gray-700
           rounded-2xl
-          px-5 pt-7 pb-3
+          px-4 pt-7 pb-3
           text-base sm:text-lg
           text-white
           transition-all duration-300

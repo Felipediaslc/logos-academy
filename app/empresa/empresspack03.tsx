@@ -104,7 +104,9 @@ export default function EmpressPack03() {
                 Sign Up Empresas
               </h3>
 
-              <form onSubmit={handleSubmit} className="flex flex-col gap-6 sm:gap-8 font-jakarta-regular  max-w-xl mx-auto ">
+              <form onSubmit={handleSubmit} 
+              className="flex flex-col gap-6 sm:gap-8 font-jakarta-regular  max-w-xl mx-auto px-0
+              ">
 
                 <Input
                   id="name"
@@ -143,12 +145,12 @@ export default function EmpressPack03() {
                   type="submit"
                   disabled={loading}
                   className="       
-    min-w-[98%]     
+    w-[98%]     
     max-w-[98%]     
   mx-auto!
     md:min-w-[88%]   /* tablet */
     lg:w-[91%]      
-                  rounded-2xl bg-orange-500 py-3 font-semibold 
+                  rounded-2xl bg-orange-500 py-3 font-semibold ml-6 sm:ml-0
                    text-gray-950 text-lg transition-all duration-300 hover:bg-orange-600 hover:scale-[1.02] disabled:opacity-60"
                 >
                   {loading ? "Enviando..." : "Enviar"}
