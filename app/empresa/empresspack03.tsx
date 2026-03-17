@@ -142,12 +142,13 @@ export default function EmpressPack03() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="       peer
-    min-w-[95%]      /* para celulares muito pequenos, 2% menor que 88% */
-     /* celular padrão */
+                  className="       
+    min-w-[98%]     
+    max-w-[98%]     
+  mx-auto!
     md:min-w-[88%]   /* tablet */
     lg:w-[91%]      
-                  rounded-2xl bg-orange-500 py-3 font-semibold ml-0.5
+                  rounded-2xl bg-orange-500 py-3 font-semibold 
                    text-gray-950 text-lg transition-all duration-300 hover:bg-orange-600 hover:scale-[1.02] disabled:opacity-60"
                 >
                   {loading ? "Enviando..." : "Enviar"}
