@@ -97,8 +97,8 @@ export default function EmpressPack03() {
           </div>
 
           {/* FORMULÁRIO */}
-          <div className="flex justify-center md:justify-start">
-            <div className="w-full max-w-md px-4 sm:px-0">
+          <div className="flex justify-center md:justify-start ">
+            <div className="w-md max-w-md px-3 sm:px-0">
 
               <h3 className="text-xl sm:text-2xl md:text-3xl font-cooper-bold text-orange-500 mb-6 text-center md:text-left">
                 Sign Up Empresas
@@ -142,7 +142,13 @@ export default function EmpressPack03() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full rounded-2xl bg-orange-500 py-3 font-semibold text-gray-950 text-lg transition-all duration-300 hover:bg-orange-600 hover:scale-[1.02] disabled:opacity-60"
+                  className="       peer
+    min-w-[95%]      /* para celulares muito pequenos, 2% menor que 88% */
+     /* celular padrão */
+    md:min-w-[88%]   /* tablet */
+    lg:w-[91%]      
+                  rounded-2xl bg-orange-500 py-3 font-semibold ml-0.5
+                   text-gray-950 text-lg transition-all duration-300 hover:bg-orange-600 hover:scale-[1.02] disabled:opacity-60"
                 >
                   {loading ? "Enviando..." : "Enviar"}
                 </button>

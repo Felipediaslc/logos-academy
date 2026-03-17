@@ -220,7 +220,10 @@ const RegisterForm: React.FC = () => {
                 <button
   type="submit"
   disabled={loading}
-  className="w-full rounded-2xl bg-gray-950 py-3 font-semibold text-orange-500 text-lg transition-all duration-300 hover:bg-gray-800 hover:scale-[1.02] disabled:opacity-60"
+  className="ml-2  min-w-[91%]  
+                        sm:min-w-[90%] 
+                         md:min-w-[91%]   
+                         lg:w-[91%]       rounded-2xl bg-gray-950 py-3 font-semibold text-orange-500 text-lg transition-all duration-300 hover:bg-gray-800 hover:scale-[1.02] disabled:opacity-60"
 >
   {loading ? "Enviando..." : "Enviar"}
 </button>
