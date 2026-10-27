@@ -1,29 +1,24 @@
-"use client";
-
-import React from "react";
 import Image from "next/image";
-
+import HomeImg from "../../public/home-img.png";
 const techs = [
   { name: "HTML5", icon: "/icons/html5.png" },
   { name: "CSS3", icon: "/icons/css.png" },
   { name: "JavaScript", icon: "/icons/js.png" },
   { name: "TypeScript", icon: "/icons/ts.png" },
   { name: "Node.js", icon: "/icons/node-js.png" },
-  { name: "Express", icon: "/icons/express.png" },
+  { name: "Express", icon: "/icons/express.png" }, // renomeie o arquivo para minúsculas
   { name: "React", icon: "/icons/react.png" },
   { name: "MongoDB", icon: "/icons/mongodb.png" },
   { name: "Prisma", icon: "/icons/prisma.webp" },
   { name: "MySQL", icon: "/icons/mysql.png" },
   { name: "Git", icon: "/icons/git.png" },
-  { name: "Git", icon: "/icons/git.png" },
   { name: "GitHub", icon: "/icons/github.png" },
 ];
 
-const HomePage: React.FC = () => {
+export default function Hero() {
   return (
     <section className="min-h-screen flex items-center bg-orange-500 py-24 lg:py-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        
         {/* Texto */}
         <div className="text-center lg:text-left">
           <h1 className="font-cooper-bold text-3xl sm:text-5xl lg:text-6xl font-extrabold text-black leading-tight">
@@ -37,38 +32,35 @@ const HomePage: React.FC = () => {
           </p>
 
           {/* Badges */}
-          <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 mt-8">
+          <ul className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 mt-8 list-none p-0 m-0 mt-8">
             {techs.map((tech) => (
-              <span
+              <li
                 key={tech.name}
                 className="flex items-center gap-2 bg-orange-700 text-white px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-medium shadow-sm hover:scale-105 transition-transform duration-200"
               >
                 <Image
                   src={tech.icon}
-                  alt={tech.name}
+                  alt=""
+                  aria-hidden="true"
                   width={16}
                   height={16}
                 />
                 {tech.name}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
-        {/* Ilustração */}
+    
         <div className="flex justify-center mt-10 lg:mt-0">
           <Image
-            src="/home-img.png"
-            alt="Ilustração pessoas programando"
-            width={420}
-            height={420}
-            priority
-            className="w-[240px] sm:w-[350px] lg:w-[420px] h-auto"
-          />
+             src={HomeImg}
+             alt="Ilustração pessoas programando"
+             priority
+             className="w-[240px] sm:w-[350px] lg:w-[420px] h-auto"
+            />
         </div>
       </div>
     </section>
   );
-};
-
-export default HomePage;
+}

@@ -12,36 +12,36 @@ const Page = () => {
           
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 
-            {/* LADO ESQUERDO: IMAGEM */}
+            
             <div className="w-full lg:w-1/2 flex justify-center order-2 lg:order-1">
               
               <div className="relative w-full max-w-xl aspect-square md:aspect-video lg:aspect-square xl:aspect-[4/3] group">
                 
                 <Image
-                  alt="Vantagens de ser Dev Full-Stack"
-                  src={ImagemUp}
-                  fill
-                  className="rounded-3xl shadow-2xl shadow-orange-500/10 group-hover:shadow-orange-500/20 transition-all duration-500"
-                  priority
+                     alt="Vantagens de ser Dev Full-Stack"
+                     src={ImagemUp}
+                     fill
+                      sizes="(max-width: 1024px) 100vw, 576px"
+                       className="rounded-3xl shadow-2xl shadow-orange-500/10 group-hover:shadow-orange-500/20 transition-all duration-500"
+                       priority
                 />
 
-                {/* Glow suave */}
+      
                 <div className="absolute inset-0 rounded-3xl border border-orange-500/10 pointer-events-none" />
 
               </div>
             </div>
 
-            {/* LADO DIREITO: CONTEÚDO */}
+          
             <div className="w-full lg:w-1/2 space-y-10 order-1 lg:order-2">
 
-              {/* TAG */}
               <div className="inline-block border border-orange-500/40 px-5 py-1.5 rounded-full backdrop-blur-sm">
                 <span className="font-mono text-xs tracking-[0.25em] uppercase text-orange-400">
                   Vantagens
                 </span>
               </div>
 
-              {/* TÍTULO */}
+          
               <h2 className="font-cooper-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight tracking-tight">
                 Por que se tornar um{" "}
                 <span className="text-orange-400">
@@ -49,7 +49,7 @@ const Page = () => {
                 </span>
               </h2>
 
-              {/* LISTA */}
+        
               <div className="divide-y divide-gray-800/60 border-y border-gray-800/60">
 
                 {[
