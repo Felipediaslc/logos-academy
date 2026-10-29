@@ -1,42 +1,44 @@
-import Image from "next/image";
-import HomeImg from "../../public/home-img.png";
+import Image from 'next/image'
+import HomeImg from '../../public/home-img.png'
+ 
 const techs = [
-  { name: "HTML5", icon: "/icons/html5.png" },
-  { name: "CSS3", icon: "/icons/css.png" },
-  { name: "JavaScript", icon: "/icons/js.png" },
-  { name: "TypeScript", icon: "/icons/ts.png" },
-  { name: "Node.js", icon: "/icons/node-js.png" },
-  { name: "Express", icon: "/icons/express.png" }, // renomeie o arquivo para minúsculas
-  { name: "React", icon: "/icons/react.png" },
-  { name: "MongoDB", icon: "/icons/mongodb.png" },
-  { name: "Prisma", icon: "/icons/prisma.webp" },
-  { name: "MySQL", icon: "/icons/mysql.png" },
-  { name: "Git", icon: "/icons/git.png" },
-  { name: "GitHub", icon: "/icons/github.png" },
-];
-
+  { name: 'HTML5', icon: '/icons/html5.png' },
+  { name: 'CSS3', icon: '/icons/css.png' },
+  { name: 'JavaScript', icon: '/icons/js.png' },
+  { name: 'TypeScript', icon: '/icons/ts.png' },
+  { name: 'Node.js', icon: '/icons/node-js.png' },
+  // Linux/Vercel diferencia maiúsculas: o arquivo precisa se chamar exatamente "express.png"
+  { name: 'Express', icon: '/icons/express.png' },
+  { name: 'React', icon: '/icons/react.png' },
+  { name: 'MongoDB', icon: '/icons/mongodb.png' },
+  { name: 'Prisma', icon: '/icons/prisma.webp' },
+  { name: 'MySQL', icon: '/icons/mysql.png' },
+  { name: 'Git', icon: '/icons/git.png' },
+  { name: 'GitHub', icon: '/icons/github.png' },
+]
+ 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center bg-orange-500 py-24 lg:py-0">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+    // svh = altura "pequena" do viewport: não pula quando a barra do Safari/Chrome some
+    <section className="flex items-center bg-orange-500 py-12 sm:py-16 md:min-h-[90svh] lg:min-h-screen lg:py-0">
+      <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-16">
         {/* Texto */}
         <div className="text-center lg:text-left">
-          <h1 className="font-cooper-bold text-3xl sm:text-5xl lg:text-6xl font-extrabold text-black leading-tight">
+          <h1 className="font-cooper-bold text-5xl font-extrabold leading-tight text-black sm:text-6xl">
             Encontre <br /> seu <br /> futuro
           </h1>
-
-          <p className="mt-6 text-gray-50 text-sm sm:text-lg max-w-md sm:max-w-xl mx-auto lg:mx-0 font-jakarta-regular">
-            A plataforma completa pra você aprender programação do zero
-            no seu ritmo, se tornar Full Stack e se especializar em
-            diversas tecnologias.
+ 
+          <p className="font-jakarta-regular mx-auto mt-6 max-w-md text-base text-gray-50 sm:max-w-xl sm:text-lg lg:mx-0">
+            A plataforma completa pra você aprender programação do zero no seu ritmo, se tornar Full
+            Stack e se especializar em diversas tecnologias.
           </p>
-
+ 
           {/* Badges */}
-          <ul className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 mt-8 list-none p-0 m-0 mt-8">
+          <ul className="mt-8 flex flex-wrap justify-center gap-2 sm:gap-3 lg:justify-start">
             {techs.map((tech) => (
               <li
                 key={tech.name}
-                className="flex items-center gap-2 bg-orange-700 text-white px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-medium shadow-sm hover:scale-105 transition-transform duration-200"
+                className="flex items-center gap-2 rounded-full bg-orange-700 px-3 py-2 text-xs font-medium text-white shadow-sm transition-transform duration-200 motion-safe:hover:scale-105 sm:px-4 sm:text-sm"
               >
                 <Image
                   src={tech.icon}
@@ -44,23 +46,26 @@ export default function Hero() {
                   aria-hidden="true"
                   width={16}
                   height={16}
+                  className="h-4 w-4 object-contain"
                 />
                 {tech.name}
               </li>
             ))}
           </ul>
         </div>
-
-    
-        <div className="flex justify-center mt-10 lg:mt-0">
+ 
+        {/* Ilustração (o espaçamento já vem do gap do grid) */}
+        <div className="flex justify-center">
           <Image
-             src={HomeImg}
-             alt="Ilustração pessoas programando"
-             priority
-             className="w-[240px] sm:w-[350px] lg:w-[420px] h-auto"
-            />
+            src={HomeImg}
+            alt="Ilustração de pessoas programando"
+            priority
+            sizes="(max-width: 639px) 240px, (max-width: 1023px) 350px, 420px"
+            className="h-auto w-full max-w-[240px] sm:max-w-[350px] lg:max-w-[420px]"
+          />
         </div>
       </div>
     </section>
-  );
+  )
 }
+ 
